@@ -1,0 +1,104 @@
+﻿{
+  "defaultlang": "Es", // set your language
+
+  "Stores": [
+    {
+      "name": "", //Valentine
+      "NPCModel": "CS_theodorelevin",
+      "BlipIcon": -1,
+      "EnterStore": [ 906.287, 263.327, 116.2199, 1.0 ],
+      "CameraMain": [ 906.287, 263.327, 116.2199, -8.367887, 0.0, 98.03303527832 ],
+      "NPCStore": [ -369.7358, 798.4165, 116.1889, 4.744277 ],
+      "SpawnObjectStore": [ -281.19, 779.78, 119.65, 358.81 ],
+      "SpawnAmmoInStores": [
+        [ -282.49, 779.72, 119.55, 0.03, "p_ammoboxhalf01x", "ammo_bullet_revolver", 0.25 ], //item ammo box of 10 bullets
+        [ -283.51, 779.72, 119.55, 0.03, "s_inv_used_pistolammo01x", "ammo_bullet_pistol", 0.25 ],
+        [ -283.03, 779.72, 119.55, 0.03, "s_inv_repeat_rifleammo01x", "ammo_bullet_repeater", 0.25 ]
+      ]
+    }
+  ],
+
+  "AmmoGivesOnUse": [
+    {
+      "ammo_bullet_revolver": "AMMO_REVOLVER",
+      "ammo_bullet_pistol": "AMMO_PISTOL",
+      "ammo_shotgun": "AMMO_SHOTGUN",
+      "ammo_bullet_repeater": "AMMO_REPEATER",
+      "ammo_bullet_rifle": "AMMO_RIFLE",
+      "ammo_bullet_varmint": "AMMO_22"
+    }
+  ],
+
+  "Weapons": [
+    {
+      "Name": "Arco",
+      "HashName": "WEAPON_BOW",
+      "WeaponModel": "w_sp_bowarrow",
+      "Price": 2000000000000.0,
+      "AmmoHash": [
+        {
+          "AMMO_ARROW": 3.0,
+          "AMMO_ARROW_DYNAMITE": 2.5,
+          "AMMO_ARROW_IMPROVED": 5.0
+        }
+      ],
+      "CompsHash": []
+    },
+    {
+      "Name": "Arco mejorado",
+      "HashName": "WEAPON_BOW_IMPROVED",
+      "WeaponModel": "w_bow_improved01",
+      "Price": 2000000000000.0,
+      "AmmoHash": [
+        {
+          "AMMO_ARROW": 3.0,
+          "AMMO_ARROW_DYNAMITE": 15.5,
+          "AMMO_ARROW_IMPROVED": 5.0
+        }
+      ],
+      "CompsHash": []
+    }
+  ],
+
+  "AmmoLimit": [
+    {
+      "AMMO_TOMAHAWK": 3,
+      "AMMO_TOMAHAWK_IMPROVED": 3,
+      "AMMO_TOMAHAWK_HOMING": 3,
+      "AMMO_THROWING_KNIVES": 8,
+      "AMMO_THROWING_KNIVES_IMPROVED": 8,
+      "AMMO_THROWING_KNIVES_POISON": 8,
+      "AMMO_ARROW": 40,
+      "AMMO_ARROW_DYNAMITE": 8,
+      "AMMO_ARROW_FIRE": 8,
+      "AMMO_ARROW_IMPROVED": 40,
+      "AMMO_ARROW_POISON": 8,
+      "AMMO_ARROW_SMALL_GAME": 40,
+      "AMMO_PISTOL": 100,
+      "AMMO_PISTOL_EXPRESS": 100,
+      "AMMO_PISTOL_EXPRESS_EXPLOSIVE": 10,
+      "AMMO_PISTOL_HIGH_VELOCITY": 100,
+      "AMMO_PISTOL_SPLIT_POINT": 50,
+      "AMMO_REVOLVER": 200,
+      "AMMO_REVOLVER_EXPRESS": 200,
+      "AMMO_REVOLVER_EXPRESS_EXPLOSIVE": 10,
+      "AMMO_REVOLVER_HIGH_VELOCITY": 200,
+      "AMMO_REVOLVER_SPLIT_POINT": 100,
+      "AMMO_22": 100, // No recarga el arma
+      "AMMO_REPEATER": 200,
+      "AMMO_REPEATER_EXPRESS": 200,
+      "AMMO_REPEATER_EXPRESS_EXPLOSIVE": 10,
+      "AMMO_REPEATER_HIGH_VELOCITY": 200,
+      "AMMO_REPEATER_SPLIT_POINT": 100, // No aparecen en el inventario aunque las hayas comprado
+      "AMMO_RIFLE": 100,
+      "AMMO_RIFLE_EXPRESS": 100,
+      "AMMO_RIFLE_EXPRESS_EXPLOSIVE": 10,
+      "AMMO_RIFLE_HIGH_VELOCITY": 100,
+      "AMMO_RIFLE_SPLIT_POINT": 50,
+      "AMMO_SHOTGUN": 60,
+      "AMMO_SHOTGUN_BUCKSHOT_INCENDIARY": 14,
+      "AMMO_SHOTGUN_EXPRESS_EXPLOSIVE": 14, // No aparecen en el inventario aunque las hayas comprado
+      "AMMO_SHOTGUN_SLUG": 60
+    }
+  ]
+}

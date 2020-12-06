@@ -1,0 +1,359 @@
+﻿{
+  "defaultlang": "Es", // Idioma por defecto
+  "KeyToOpenMenu": "0xD8F73058", // Tecla para abrir el menu, U
+  "AutoScenarioActivated": true, // Activar o desactivar Auto scenarios con tecla
+  "AutoScenarioKey": "0x1F6D95E5", // Tecla para iniciar escenarios automaticos, F4
+  "StopAnimationKey": "0x26E9DC00", // Tecla para parar animaciones o escenarios, Z
+
+  // Walk Style List
+  "WalkStyleList": [
+    {
+      "Name": "Normal",
+      "Style": "MP_Style_Default"
+    },
+    {
+      "Name": "Casual",
+      "Style": "MP_Style_Casual"
+    },
+    {
+      "Name": "Louco",
+      "Style": "MP_Style_Crazy"
+    },
+    {
+      "Name": "Extravagante",
+      "Style": "MP_Style_Flamboyant"
+    },
+    {
+      "Name": "Pistoleiro",
+      "Style": "MP_Style_Gunslinger"
+    },
+    {
+      "Name": "Importante",
+      "Style": "MP_Style_Refined"
+    },
+    {
+      "Name": "Silencioso",
+      "Style": "MP_Style_SilentType"
+    },
+    {
+      "Name": "Desajeitado",
+      "Style": "MP_Style_Greenhorn"
+    },
+    {
+      "Name": "Veterano",
+      "Style": "MP_Style_Veteran"
+    },
+    {
+      "Name": "Cavalheiro",
+      "Style": "MP_Style_EasyRider"
+    }
+  ],
+
+  // ANIMACIONES
+  "AnimationsList": [
+    {
+      "Name": "Bater à porta",
+      "Anim": "WORLD_HUMAN_KNOCK_DOOR",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Mijar",
+      "Anim": "WORLD_HUMAN_PEE",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Sentar no chão",
+      "Anim": "WORLD_HUMAN_FIRE_SIT",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Mãos na cintura",
+      "Anim": "WORLD_HUMAN_BADASS",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Vomitar",
+      "Anim": "WORLD_HUMAN_VOMIT",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Vomitar de joelhos",
+      "Anim": "WORLD_HUMAN_VOMIT_KNEEL",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Lavar o rosto de joelhos",
+      "Anim": "WORLD_HUMAN_WASH_FACE_BUCKET_GROUND",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Observar de joelhos",
+      "Anim": "WORLD_PLAYER_DYNAMIC_KNEEL",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Impaciente",
+      "Anim": "WORLD_HUMAN_WAITING_IMPATIENT",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Esperar",
+      "Anim": "WORLD_HUMAN_STAND_WAITING",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Inspecionar o chão",
+      "Anim": "WORLD_HUMAN_CROUCH_INSPECT",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Inspecionar",
+      "Anim": "WORLD_HUMAN_INSPECT",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Braços cruzados",
+      "Anim": "WORLD_HUMAN_STARE_STOIC",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Limpar copo",
+      "Anim": "WORLD_HUMAN_BARTENDER_CLEAN_GLASS",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Apoiar no balcão 1",
+      "Anim": "WORLD_HUMAN_SHOPKEEPER",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Apoiar no balcão 2",
+      "Anim": "WORLD_HUMAN_SHOPKEEPER_CATALOG",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Mãos na cintura 2",
+      "Anim": "WORLD_HUMAN_STERNGUY_IDLES",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Notas",
+      "Anim": "WORLD_HUMAN_WRITE_NOTEBOOK",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Fumar charuto",
+      "Anim": "WORLD_HUMAN_SMOKE_CIGAR",
+      "Type": "scenario"
+    },
+    {
+      "Name": "Fumar cigarro",
+      "Anim": "WORLD_HUMAN_SMOKE_INTERACTION",
+      "Type": "scenario"
+    }
+  ],
+
+  // EMOTES
+  "EmotesList": [
+    {
+      "Name": "Cumprimentar",
+      "Emote": -339257980
+    },
+    {
+      "Name": "Mandar beijo",
+      "Emote": 1927505461
+    },
+    {
+      "Name": "Acena com os braços cruzados",
+      "Emote": 1879954891
+    },
+    {
+      "Name": "Segue-me",
+      "Emote": 1115379199
+    },
+    {
+      "Name": "Suplicar",
+      "Emote": 164860528
+    },
+    {
+      "Name": "Disparar para o ar",
+      "Emote": 1939251934
+    },
+    {
+      "Name": "Disparar para a frente",
+      "Emote": -1639456476
+    },
+    {
+      "Name": "Aplaudir",
+      "Emote": -221241824
+    },
+    {
+      "Name": "Desaprovar",
+      "Emote": 1509171361
+    },
+    {
+      "Name": "Ameaçar",
+      "Emote": 1256841324
+    },
+    {
+      "Name": "Fingir lesão",
+      "Emote": -110352861
+    },
+    {
+      "Name": "Raiva",
+      "Emote": 796723886
+    },
+    {
+      "Name": "Vitória",
+      "Emote": -402959
+    },
+    {
+      "Name": "Mau cheiro",
+      "Emote": -166523388
+    },
+    {
+      "Name": "Aprovar",
+      "Emote": 425751659
+    },
+    {
+      "Name": "Cuspir",
+      "Emote": -2106738342
+    },
+    {
+      "Name": "Olhar o horizonte",
+      "Emote": 935157006
+    },
+    {
+      "Name": "Indicar 1",
+      "Emote": 1593752891
+    },
+    {
+      "Name": "Indicar 2",
+      "Emote": 7918540
+    },
+    {
+      "Name": "Indicar 3",
+      "Emote": 486225122
+    },
+    {
+      "Name": "Vem aqui",
+      "Emote": 474409519
+    },
+    {
+      "Name": "Pescar",
+      "Emote": 1159716480
+    },
+    {
+      "Name": "Mostrar músculos",
+      "Emote": -773960361
+    },
+    {
+      "Name": "Conspirar",
+      "Emote": 589481092
+    },
+    {
+      "Name": "Mandar parar",
+      "Emote": -1691237868
+    },
+    {
+      "Name": "Apontar divertido",
+      "Emote": 831975651
+    },
+    {
+      "Name": "Cumprimentar amigável",
+      "Emote": 901097731
+    },
+    {
+      "Name": "Cumprimentar cortês",
+      "Emote": -2121881035
+    },
+    {
+      "Name": "Cumprimentar com chapéu",
+      "Emote": -1457020913
+    },
+    {
+      "Name": "Cumprimentar com respeito",
+      "Emote": -1801715172
+    },
+    {
+      "Name": "Feliz em ver-te",
+      "Emote": 523585988
+    },
+    {
+      "Name": "¡Taa Daa!",
+      "Emote": -462132925
+    },
+    {
+      "Name": "Indignado",
+      "Emote": 1802342943
+    },
+    {
+      "Name": "Doente",
+      "Emote": -1118911493
+    },
+    {
+      "Name": "Cale-se",
+      "Emote": -1644757697
+    },
+    {
+      "Name": "Concordar",
+      "Emote": -822629770
+    },
+    {
+      "Name": "Divertir",
+      "Emote": 803206066
+    },
+    {
+      "Name": "Negar",
+      "Emote": -653113914
+    },
+    {
+      "Name": "Aplauso lento",
+      "Emote": 1023735814
+    },
+    {
+      "Name": "Quem eu?",
+      "Emote": 329631369
+    },
+    {
+      "Name": "Yeehaa",
+      "Emote": 445839715
+    },
+    {
+      "Name": "Fingir choro",
+      "Emote": 246916594
+    },
+    {
+      "Name": "Lamentar",
+      "Emote": 81347960
+    },
+    {
+      "Name": "Galinha",
+      "Emote": 1825177171
+    },
+    {
+      "Name": "Foda-se 1",
+      "Emote": 354512356
+    },
+    {
+      "Name": "Foda-se 2",
+      "Emote": 969312568
+    },
+    {
+      "Name": "Vigiar",
+      "Emote": -553424129
+    },
+    {
+      "Name": "Desafio",
+      "Emote": 1533402397
+    },
+    {
+      "Name": "Raiva 2",
+      "Emote": 987239450
+    },
+    {
+      "Name": "Orgulhoso",
+      "Emote": -1252070669
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+    "TakeFromFloor": "Recolher",
+    "fullInventory": "Carregas muito peso, não te podem dar mais nada",
+    "fullInventoryGive": "A pessoa carrega muito peso não podes dar-lhe mais coisas",
+    "TryExploits": "Não tentes enganar o sistema",
+
+    "NotEnoughMoney": "nao tens tanto dinheiro",
+    "YouPaid": "Pagaste {0}$ a {1}",
+    "YouReceived": "Recebeste {0}$ de {1}"
+}

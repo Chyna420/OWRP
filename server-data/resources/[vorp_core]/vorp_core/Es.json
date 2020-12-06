@@ -1,0 +1,15 @@
+﻿{
+  "IsConnected": "Conta duplicada (steam | rockstar)",
+  "NoSteam": "Abre a steam",
+  "NoInWhitelist": "Candidata-te em https://discord.gg/AXgFjg92c5",
+  "NoPermissions": "Não tens permição",
+  "CheckingIdentifier": "Verificar o ID",
+  "LoadingUser": "Carregar usuario",
+  "BannedUser": "Estás banido",
+  "TitleOnDead": "",
+  "SubTitleOnDead": "",
+  "SubTitlePressKey": "~e~E~q~",
+  "YouAreCarried": "",
+
+  "VoiceRangeChanged": " {0} metros"
+}

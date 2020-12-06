@@ -1,0 +1,16 @@
+{
+  "defaultlang": "En",
+
+  "BarberCost": 10.0,
+
+  "BarberShops": [
+    {
+      "name": "Barbeiro",
+      "BlipIcon": -2090472724,
+      "EnterShop": [ -307.26, 812.29, 118.99, 1.5 ],
+      "ExitShop": [ -307.26, 812.29, 118.99, 189.89 ],
+      "NPCShop": [ -307.6133, 814.1510, 117.9898, 227.8071 ],
+      "NPCModel": "U_M_M_ValBarber_01"
+    }
+  ]
+}

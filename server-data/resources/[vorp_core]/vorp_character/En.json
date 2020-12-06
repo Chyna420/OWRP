@@ -1,0 +1,346 @@
+{
+  "PressRightOrLeft": "[<-]  [->] Escolhe o genero",
+
+  "PressGuide": "Rodar [A] [D] | Cameras [W]  [S]",
+
+  //New Update
+  "CreateNewChar": "Criar novo",
+  "DeleteChar": "CK",
+  "MoneyTag": "Dinheiro",
+  "CharactersFull": "Atingis-te o maixomo de personagens",
+  "PressSelectInfo": "Trocar de personagem <-  -> | Selecionar [ENTER]",
+
+  "CommandHat": "c",
+  "CommandEyeWear": "o",
+  "CommandMask": "m",
+  "CommandNeckWear": "ap",
+  "CommandNeckTies": "g",
+  "CommandShirt": "cam",
+  "CommandSuspender": "s",
+  "CommandVest": "col",
+  "CommandCoat": "cas",
+  "CommandPoncho": "p",
+  "CommandCloak": "cap",
+  "CommandGlove": "l",
+  "CommandRings": "a",
+  "CommandBracelet": "pul",
+  "CommandBelt": "cin",
+  "CommandBuckle": "f",
+  "CommandPant": "cal",
+  "CommandSkirt": "sa",
+  "CommandChap": "pc",
+  "CommandBoots": "b",
+  "CommandSpurs": "es",
+  "CommandUndress": "despir",
+  "CommandDress": "vestir",
+
+  "Scale": "Altura #",
+  "ScaleList": "Altura do Personagem",
+  "ScaleDesc": "Ajuste a altura",
+
+  "EyeBrows": "Sobrancelhas #",
+  "EyeBrowsList": "Tipo de sobrancelha",
+  "EyeBrowsDesc": "Sobrancelhas",
+
+  "Scars": "Cicatriz #",
+  "ScarsList": "Tipos de Cicatrizes",
+  "ScarsDesc": "Adicionar Cicatrizes",
+
+  "Spots": "Pontos #",
+  "SpotsList": "Rubor",
+  "SpotsDesc": "Pontos",
+
+  "Disc": "Manchas #",
+  "DiscList": "Tipos de Manchas",
+  "DiscDesc": "Manchas roxas da cara",
+
+  "Complex": "Tez #",
+  "ComplexList": "Tipos de Tez",
+  "ComplexDesc": "Queimaduras solares",
+
+  "Acne": "Acne #",
+  "AcneList": "Tipos de Acne",
+  "AcneDesc": "Adicione Acne ao rosto",
+
+  "Ageing": "Envelhecimento #",
+  "AgeingList": "Tipo",
+  "AgeingDesc": "Envelhecimento facial",
+
+  "Moles": "Verrugas #",
+  "MolesList": "Tipos de Verruga",
+  "MolesDesc": "Adicionar Verrugas",
+
+  "Freckles": "Sardas #",
+  "FrecklesList": "Tipos de Sardas",
+  "FrecklesDesc": "Adicionar Sardas",
+
+  "Grimes": "Sujeira #",
+  "GrimesList": "Tipo de sujeira",
+  "GrimesDesc": "Adicione sujeira ou sujeira",
+
+  "Lipsticks": "Batom #",
+  "LipsticksList": "Tipos de Batom",
+  "LipsticksDesc": "Adicionar Maquiagem",
+
+  "LipsticksColors": "Cor #",
+  "LipsticksColorsList": "Batom Cor Primaria",
+  "LipsticksColorsDesc": "Adicionar Maquiagem",
+
+  "LipsticksPColors": "Cor #",
+  "LipsticksPColorsList": "Batom Cor Secundaria",
+  "LipsticksPColorsDesc": "Adicionar Maquiagem",
+
+  "Shadows": "Sombra #",
+  "ShadowsList": "Tipos de Sombra",
+  "ShadowsDesc": "Adicionar Maquiagem",
+
+  "ShadowsColors": "Cor #",
+  "ShadowsColorsList": "Sombra de Olhos",
+  "ShadowsColorsDesc": "Adicionar Maquiagem",
+
+  "ShadowsPColors": "Cor #",
+  "ShadowsPColorsList": "Sombra de cor mista",
+  "ShadowsPColorsDesc": "Adicionar Maquiagem",
+
+  "Eyes": "Olhos #",
+  "EyesList": "Cor dos Olhos",
+  "EyesDesc": "Mudar a cor dos olhos",
+
+  //Input Name 
+  "PlaceHolderInputName": "Nome e Apelido",
+  "ButtonInputName": "Confirmar",
+  "InputError": "Você deve ter um nome com mais de 3 letras",
+
+  //Body
+  "TitleMainMenu": "Editor de personagem",
+  "SubTitleMainMenu": "Personalize seu personagem",
+  "FinishBtnMainMenu": "Concluir e Guardar",
+  "SubFinishBtnMainMenu": "Conclua a criação do personagem.",
+
+  "TitleClothesMenu": "Provador",
+  "SubTitleClothesMenu": "Vista seu personagem",
+
+  "TitleFaceMenu": "Personalizar Rosto",
+  "SubTitleFaceMenu": "Personalize o rosto de seus personagens",
+
+  "TitleSkinMenu": "Personalizar Corpo",
+  "SubTitleSkinMenu": "Personalize o corpo de seus personagens",
+
+  "TitleImportMenu": "Importar Skin",
+  "SubTitleImportMenu": "",
+
+  "LegsValues": "Pernas #",
+  "TorsoValues": "Tronco #",
+  "FaceValues": "Rosto #",
+  "MaskValue": "Máscara Facial #",
+  "BodyColorValues": "Cor #",
+  "TypeValues": "Tipo #",
+  "BeardValue": "Barba #",
+  "HairValue": "Cabelo #",
+  "BodySizeValue": "Corpo #",
+  "WaistValue": "Cintura #",
+  "NoExistValue": "Não existe",
+
+  "LegsType": "Tipo de Pernas",
+  "TorsoType": "Tipo de Tronso",
+  "FaceType": "Tipo de Rosto",
+  "BodyColor": "Cor do Corpo",
+  "FaceSize": "Tamanho do Rosto",
+  "EyebrowHeight": "Altura da Sobrancelha",
+  "EyebrowWidth": "Largura da Sobrancelha",
+  "EyebrowDepth": "Profundidade da Sobrancelha",
+  "EarsHeight": "Altura das Orelhas",
+  "EarsAngle": "Inclinação das Orelhas",
+  "EarsSize": "Tamanho das Orelhas",
+  "EarsLobeSize": "Tamanho do Lóbulo da Orelha",
+  "EyelidsHeight": "Altura das Pálpebras",
+  "EyelidsWidth": "Largura das Pálpebras",
+  "EyeDepth": "Profundidade dos Olhos",
+  "EyeAngle": "Inclinação dos Olhos",
+  "EyeSeparation": "Separação dos Olhos",
+  "EyeHeight": "Altura dos Olhos",
+  "NoseWidth": "Largura do Nariz",
+  "NoseSize": "Tamanho do Nariz",
+  "NoseHeight": "Altura do Nariz",
+  "NoseAngle": "Inclinação do Nariz",
+  "NoseCurvature": "Curvatura do Nariz",
+  "NostrilsSeparation": "Separação das Narinas",
+  "CheekbonesHeight": "Altura das Maçãs do Rosto",
+  "CheekbonesWidth": "Largura das Maçãs do Rosto",
+  "CheekbonesDepth": "Profundidade das Maçãs do Rosto",
+  "MouthWidth": "Largura da Boca",
+  "MouthDepth": "Profundidade da Boca",
+  "MouthDeviation": "Desvio de Boca",
+  "MouthHeight": "Altura da Boca",
+  "UpperLipHeight": "Altura do Lábio Superior",
+  "UpperLipWidth": "Largura do Lábio Superior",
+  "UpperLipDepth": "Profundidade do Lábio Superior",
+  "LowerLipHeight": "Altura do Lábio Inferior",
+  "LowerLipWidth": "Largura do Lábio Inferior",
+  "LowerLipDepth": "Profundidade do Lábio Inferior",
+  "MandibleHeight": "Altura da Mandíbula",
+  "MandibleWidth": "Largura da Mandíbula",
+  "MandibleDepth": "Profundidade da Mandíbula",
+  "ChinHeight": "Altura do Queixo",
+  "ChinWidth": "Largura do Queixo",
+  "ChinDepth": "Profundidade do Queixo",
+  "BeardType": "Tipo de Barba",
+  "HairType": "Tipo de Cabelo",
+  "BodyType": "Robustez",
+  "WaistType": "Tipo de Cintura",
+  "Confirm": "Confirmar",
+
+  ///Descriptions of the body Menu sections
+  "LegsTypeDesc": "Tipo de Pernas",
+  "TorsoTypeDesc": "Tipo de Tronco",
+  "FaceTypeDesc": "Tipo de Rosto",
+  "BodyColorDesc": "Cor do Corpo",
+  "FaceSizeDesc": "Tamanho do Rosto",
+  "EyebrowHeightDesc": "Altura da Sobrancelha",
+  "EyebrowWidthDesc": "Largura da Sobrancelha",
+  "EyebrowDepthDesc": "Profundidade da Sobrancelha",
+  "EarsHeightDesc": "Altura das Orelhas",
+  "EarsAngleDesc": "Inclinação das Orelhas",
+  "EarsSizeDesc": "Tamanho das Orelhas",
+  "EarsLobeSizeDesc": "Tamanho do Lóbulo da Orelha",
+  "EyelidsHeightDesc": "Altura das Primeiras",
+  "EyelidsWidthDesc": "Largura das Primeiras",
+  "EyeDepthDesc": "Profundidade dos Olhos",
+  "EyeAngleDesc": "Inclinação dos Olhos",
+  "EyeSeparationDesc": "Separação dos Olhos",
+  "EyeHeightDesc": "Altura dos Olhos",
+  "NoseWidthDesc": "Largura do Nariz",
+  "NoseSizeDesc": "Tamanho do Nariz",
+  "NoseHeigthDesc": "Tamanho do Nariz",
+  "NoseAngleDesc": "Inclinação do Nariz",
+  "NoseCurvatureDesc": "Curvatura do Nariz",
+  "NostrilsSeparationDesc": "Separação das Narinas",
+  "CheekbonesHeightDesc": "Altura das Maçãs do Rosto",
+  "CheekbonesWidthDesc": "Largura das Maçãs do Rosto",
+  "CheekbonesDepthDesc": "Profundidade das Maçãs do Rosto",
+  "MouthWidthDesc": "Largura da Boca",
+  "MouthDepthDesc": "Profundidade da Boca",
+  "MouthDeviationDesc": "Desvio da Boca",
+  "MouthHeightDesc": "Altura da Boca",
+  "UpperLipHeightDesc": "Altura do Lábio Superior",
+  "UpperLipWidthDesc": "Largura do Lábio Superior",
+  "UpperLipDepthDesc": "Profundidade do Lábio Superior",
+  "LowerLipHeightDesc": "Altura do Lábio Inferior",
+  "LowerLipWidthDesc": "Largura do Lábio Inferior",
+  "LowerLipDepthDesc": "Profundidade do Lábio Inferior",
+  "MandibleHeightDesc": "Altura da Mandíbula",
+  "MandibleWidthDesc": "Largura da Mandíbula",
+  "MandibleDepthDesc": "Profundidade da Mandíbula",
+  "ChinHeightDesc": "Altura do Queixo",
+  "ChinWidthDesc": "Largura do Queixo",
+  "ChinDepthDesc": "Profundidade do Queixo",
+  "BeardTypeDesc": "Barba",
+  "HairTypeDesc": "Cabelo",
+  "BodyTypeDesc": "Tipo de corpo",
+  "WaistTypeDesc": "Cintura",
+  "ConfirmDesc": "Time to dress up, you will be able to return to this section if you want to change something",
+
+  //Ropa
+  "TitleMenuClothes": "Provador", // Menu Tittle
+  "SubTitleMenuClothes": "Vestir personagem", // Menu Description
+
+  "HatsValue": "Chapéu #", // The options of the hats section
+  "GlassesValue": "Óculos #", // The options of the glasses section
+  "NeckwearValue": "Vestuário #", // The options of the neckwear section
+  "TiesValue": "Gravata #", // The options of the ties section
+  "ShirtsValue": "Camisa #", // The options of the shirts section
+  "SuspendersValue": "Suspensórios #", // The options of the suspenders section
+  "VestsValue": "Colete #", // The options of the vests section
+  "CoatsValue": "Casaco #", // The options of the coats section
+  "PonchosValue": "Poncho #", // The options of the ponchos section
+  "CloaksValue": "Capa #", // The options of the cloaks section
+  "GlovesValue": "Luvas #", // The options of the gloves section
+  "RingsValue": "Anel #", // The options of the rings section
+  "BraceletsValue": "Pulseira #", // The options of the bracelets section
+  "HolstersValue": "Coldre #", // The options of the holsters section
+  "BeltsValue": "Cinto #", // The options of the belts section
+  "BucklesValue": "Fivela #", // The options of the buckles section
+  "PantsValue": "Calça #", // The options of the pants section
+  "SkirtsValue": "Saia #", // The options of the skirts section
+  "ChapsValue": "Proteção para Calças #", // The options of the chaps section
+  "BootsValue": "Botas #", // The options of the boots section
+  "SpursValue": "Esporas #", // The options of the spurs section
+  "NoHatsValue": "Sem chapéu", // The option it gives when you do not wear a hat
+  "NoGlassesValue": "Sem oculos", // The option it gives when you do not wear glasses
+  "NoNeckwearValue": "Sem gravata", // The option it gives when you do not wear neckwear
+  "NoTiesValue": "Sem gravata", // The option it gives when you do not wear a tie
+  "NoShirtsValue": "Sem camisa", // The option it gives when you do not wear a shirt
+  "NoSuspendersValue": "Sem suspensórios", // The option it gives when you do not wear suspenders
+  "NoVestsValue": "Sem colete", // The option it gives when you do not wear a vest
+  "NoCoatsValue": "Sem casaco", // The option it gives when you do not wear a coat
+  "NoPonchosValue": "Sem Poncho", // The option it gives when you do not wear a poncho
+  "NoCloaksValue": "Sem capa", // The option it gives when you do not wear a cloak
+  "NoGlovesValue": "Sem luvas", // The option it gives when you do not wear gloves
+  "NoRingsValue": "Sem um anel", // The option it gives when you do not wear a ring
+  "NoBraceletsValue": "Sem pulseira", // The option it gives when you do not wear a bracelet
+  "NoHolstersValue": "Sem coldre", // The option it gives when you do not wear a holster
+  "NoBeltsValue": "Sem cinto", // The option it gives when you do not wear a belt
+  "NoBucklesValue": "Sem fivela", // The option it gives when you do not wear a buckle
+  "NoPantsValue": "Sem calça", // The option it gives when you do not wear pants
+  "NoSkirtsValue": "Sem saia", // The option it gives when you do not wear a skirt
+  "NoChapsValue": "Sem Proteção para Calças", // The option it gives when you do not wear chaps
+  "NoBootsValue": "Sem botas", // The option it gives when you do not wear boots
+  "NoSpursValue": "Sem esporas", // The option it gives when you do not wear spurs
+  "NoMaskValue": "Sem Máscara", // The option it gives when you do not wear a face mask
+
+  "Hats": "Chapéus",
+  "Glasses": "Óculos",
+  "Masks": "Máscara",
+  "Neckwear": "Bandanas",
+  "Ties": "Gravatas",
+  "Shirts": "Camisas",
+  "Suspenders": "Suspensórios",
+  "Vests": "Coletes",
+  "Coats": "Casacos",
+  "CoatsClosed": "Casacos Fechados",
+  "Ponchos": "Ponchos",
+  "Cloaks": "Mantos",
+  "Gloves": "Luvas",
+  "RightRings": "Anéis de mão direita",
+  "LeftRings": "Anéis de mão esquerda",
+  "Bracelets": "Pulseiras",
+  "PrimaryHolsters": "Coldre primário",
+  "Belts": "Cintos",
+  "Buckles": "Fivelas",
+  "SecondaryHolsters": "Coldres secundários",
+  "Pants": "Calça",
+  "Skirts": "Saias",
+  "Chaps": "Proteção para Calças",
+  "Boots": "Botas",
+  "Spurs": "Esporas",
+
+  "Finish": "Confirmar", // Confirms the options of the Menu
+
+  // Descriptions of the Clothing Menu
+  "HatsDesc": "Escolha o chapéu",
+  "GlassesDesc": "Escolha os óculos",
+  "MasksDesc": "Escolha a máscara",
+  "NeckwearDesc": "Escolha a bandana",
+  "TiesDesc": "Escolha a gravata",
+  "ShirtsDesc": "Escolha a camisa",
+  "SuspendersDesc": "Escolha os suspensórios",
+  "VestsDesc": "Escolha o colete",
+  "CoatsDesc": "Escolha o casaco",
+  "PonchosDesc": "Escolha o poncho",
+  "CloaksDesc": "Escolha a capa",
+  "GlovesDesc": "Escolha as luvas",
+  "RightRingsDesc": "Escolha os anéis para a mão direita",
+  "LeftRingsDesc": "Escolha os anéis da mão esquerda",
+  "BraceletsDesc": "Escolha a pulseira",
+  "PrimaryHolstersDesc": "Escolha o coldre principal",
+  "BeltsDesc": "Escolha o cinto",
+  "BucklesDesc": "Escolha a fivela",
+  "SecondaryHolstersDesc": "Escolha o coldre secundário",
+  "PantsDesc": "Escolha as calças",
+  "SkirtsDesc": "Escolha a saia",
+  "ChapsDesc": "Escolha a Proteção para Calças",
+  "BootsDesc": "Escolha as botas",
+  "SpursDesc": "Escolha as esporas",
+  "FinishDesc": "Confirmar",
+  "TipFinal": "Bem-vindo ao , esperamos que sua estadia seja a mais divertida, lembre-se de não saltar do balão e apreciar a vista"
+}

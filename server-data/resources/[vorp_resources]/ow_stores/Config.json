@@ -1,0 +1,372 @@
+{
+  "defaultlang": "Es", // set your language
+
+  "Stores": [
+    {
+      "name": "Loja Geral",
+      "BlipIcon": 1475879922,
+      "EnterStore": [ -322.12, 804.0, 117.88, 1.0 ],
+      "CameraMain": [ -322.1734, 803.6101, 118.4799, -24.29523, 0.0, 99.53492 ],
+      "NPCStore": [ -323.9742, 803.4, 116.8837, 290.32 ],
+      "SpawnObjectStore": [ -323.2, 803.64, 117.93, 280.42 ],
+      "NPCModel": "U_M_M_ValGenStoreOwner_01",
+      "ItemsBuy": [
+        {
+          "Name": "corda", // name in DB Items
+          "BuyPrice": 0.25,
+          "ObjectModel": "s_inv_cocainegum01x"
+        },
+        {
+          "Name": "cleanshort", // name in DB Items
+          "BuyPrice": 0.25,
+          "ObjectModel": "s_inv_cocainegum01x"
+        },
+        {
+          "Name": "coca", // name in DB Items
+          "BuyPrice": 10,
+          "ObjectModel": "s_inv_cocainegum01x"
+        },
+        {
+          "Name": "campfire", // name in DB Items
+          "BuyPrice": 0.50,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "folha", // name in DB Items
+          "BuyPrice": 0.08,
+          "ObjectModel": "s_inv_paper02e_x"
+        },
+        {
+          "Name": "tinta", // name in DB Items 
+          "BuyPrice": 0.15,
+          "ObjectModel": "p_doc_botset09x"
+        },
+        {
+          "Name": "consumable_coffee", // name in DB Items
+          "BuyPrice": 0.30,
+          "ObjectModel": "p_mugcoffee01x"
+        },
+        {
+          "Name": "fishbait", // name in DB Items
+          "BuyPrice": 0.20,
+          "ObjectModel": "p_fishbobber01x"
+        },
+        {
+          "Name": "sugarcaneseed", // name in DB Items
+          "BuyPrice": 0.05,
+          "ObjectModel": "p_packetseeds01x"
+        },
+        {
+          "Name": "cornseed", // name in DB Items
+          "BuyPrice": 0.05,
+          "ObjectModel": "p_packetseeds01x"
+        },
+        {
+          "Name": "wateringcan", // name in DB Items
+          "BuyPrice": 1,
+          "ObjectModel": "s_bucketoblood01x"
+        },
+        {
+          "Name": "water", // name in DB Items
+          "BuyPrice": 0.03,
+          "ObjectModel": "p_gourdwater01x"
+        },
+      ],
+      "ItemsSell": [
+        {
+          "Name": "consumable_coffee", // name in DB Items
+          "SellPrice": 0.0,
+          "ObjectModel": "p_mugcoffee01x"
+        },
+        {
+          "Name": "consumable_peach", // name in DB Items
+          "SellPrice": 0.0,
+          "ObjectModel": "s_peach01x"
+        }
+      ]
+    },
+    {
+      "name": "Mercado",
+      "BlipIcon": -242384756,
+      "EnterStore": [ -248.1768, 666.0482, 113.5326, 1.5 ],
+      "CameraMain": [ -247.7069, 665.8468, 113.9889, -10.29523, 0.0, 230.63492 ],
+      "NPCStore": [ -245.6043, 664.5521, 112.5185, 74.306335449219 ],
+      "SpawnObjectStore": [ -323.2, 803.64, 117.93, 280.42 ],
+      "NPCModel": "U_M_M_ValGenStoreOwner_01",
+      "ItemsBuy": [
+        {
+          "Name": "lockpick", // name in DB Items
+          "BuyPrice": 0.20,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "fishbait", // name in DB Items
+          "BuyPrice": 0.20,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "malte", // name in DB Items
+          "BuyPrice": 0.09,
+          "ObjectModel": ""
+        },  
+        {
+          "Name": "levedura", // name in DB Items
+          "BuyPrice": 0.08,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "fcenteio", // name in DB Items
+          "BuyPrice": 0.06,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "p_barrelmoonshine", // name in DB Items
+          "BuyPrice": 0.05,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "p_still02x", // name in DB Items
+          "BuyPrice": 0.05,
+          "ObjectModel": ""
+        },
+      ],
+      "ItemsSell": [
+        {
+          "Name": "a_c_fishsmallmouthbass_01_ms", // name in DB Items
+          "SellPrice": 0.25,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "a_c_fishsalmonsockeye_01_ms", // name in DB Items
+          "SellPrice": 0.05,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "a_c_fishrockbass_01_sm", // name in DB Items
+          "SellPrice": 0.05,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "a_c_fishrockbass_01_ms", // name in DB Items
+          "SellPrice": 0.05,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "a_c_fishredfinpickerel_01_sm", // name in DB Items
+          "SellPrice": 0.05,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "a_c_fishredfinpickerel_01_ms", // name in DB Items
+          "SellPrice": 0.05,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "a_c_fishrainbowtrout_01_ms", // name in DB Items
+          "SellPrice": 0.05,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "a_c_fishperch_01_sm", // name in DB Items
+          "SellPrice": 0.05,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "a_c_fishperch_01_ms", // name in DB Items
+          "SellPrice": 0.05,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "a_c_fishlargemouthbass_01_ms", // name in DB Items
+          "SellPrice": 0.05,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "a_c_fishchainpickerel_01_sm", // name in DB Items
+          "SellPrice": 0.05,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "a_c_fishchainpickerel_01_ms", // name in DB Items
+          "SellPrice": 0.05,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "a_c_fishbullheadcat_01_sm", // name in DB Items
+          "SellPrice": 0.05,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "a_c_fishbullheadcat_01_ms", // name in DB Items
+          "SellPrice": 0.05,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "a_c_fishbluegil_01_sm", // name in DB Items
+          "SellPrice": 0.05,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "a_c_fishbluegil_01_ms", // name in DB Items
+          "SellPrice": 0.05,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "corn", // name in DB Items
+          "SellPrice": 0.05,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "tobacco", // name in DB Items
+          "SellPrice": 0.05,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "sugar", // name in DB Items
+          "SellPrice": 0.05,
+          "ObjectModel": ""
+        }
+      ]
+    },
+    {
+      "name": "Fabrica CornWall",
+      "BlipIcon": -984192463,
+      "EnterStore": [ 469.2177, 666.3613, 117.4884, 1.5 ],
+      "CameraMain": [ 469.2177, 666.3613, 118.4799, -24.29523, 0.0, 348.996948 ],
+      "NPCStore": [ 469.193, 668.7081, 116.4884, 172.975097 ],
+      "SpawnObjectStore": [ -323.2, 803.64, 117.93, 280.42 ],
+      "NPCModel": "CS_WATSON_01",
+      "ItemsBuy": [
+        {
+          "Name": "consumable_coffee", // name in DB Items
+          "BuyPrice": 0.25,
+          "ObjectModel": "p_mugcoffee01x"
+        },
+      ],
+      "ItemsSell": [
+        {
+          "Name": "coal", // name in DB Items
+          "SellPrice": 0.25,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "ironore", // name in DB Items
+          "SellPrice": 0.25,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "flint", // name in DB Items
+          "SellPrice": 0.25,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "rock", // name in DB Items
+          "SellPrice": 0.25,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "stone", // name in DB Items
+          "SellPrice": 0.25,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "copperore", // name in DB Items
+          "SellPrice": 0.25,
+          "ObjectModel": ""
+        },
+      ]
+    },
+    {
+      "name": "Keanes Saloon",
+      "BlipIcon": -1,
+      "EnterStore": [ -240.8754, 770.4472, 118.185, 1.0 ],
+      "CameraMain": [ -240.8754, 770.4472, 118.885, -15.29523, 0.0, 290.9248352 ],
+      "NPCStore": [ -239.2712, 771.2708, 118.1942, 111.35289764404 ],
+      "SpawnObjectStore": [ -323.2, 803.64, 117.93, 280.42 ],
+      "NPCModel": "CS_brotherdorkins",
+      "ItemsBuy": [
+        {
+          "Name": "chips", // name in DB Items
+          "BuyPrice": 0.10,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "twhisky", // name in DB Items
+          "BuyPrice": 0.80,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "ldg", // name in DB Items
+          "BuyPrice": 0.80,
+          "ObjectModel": ""
+        },
+      ],
+      "ItemsSell": [
+        {
+          "Name": "chips2", // name in DB Items
+          "SellPrice": 0.15,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "twhisky", // name in DB Items
+          "SellPrice": 0.60,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "ldg", // name in DB Items
+          "SellPrice": 0.60,
+          "ObjectModel": ""
+        },
+      ]
+    },
+    {
+      "name": "Armazem",
+      "BlipIcon": -426139257,
+      "EnterStore": [ -234.5315, 747.2255, 117.8235, 1.5 ],
+      "CameraMain": [ -233.6484, 744.5117, 118.8666, -15.29523, 0.0, 18.42392539978 ],
+      "NPCStore": [ -234.6111, 747.704, 117.8344, 199.65768432617 ],
+      "SpawnObjectStore": [ -323.2, 803.64, 117.93, 280.42 ],
+      "NPCModel": "CS_tomdickens",
+      "ItemsBuy": [
+        {
+          "Name": "fishbait", // name in DB Items
+          "BuyPrice": 0.10,
+          "ObjectModel": ""
+        },
+      ],
+      "ItemsSell": [
+        {
+          "Name": "wood", // name in DB Items
+          "SellPrice": 0.15,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "wooden_boards", // name in DB Items
+          "SellPrice": 0.15,
+          "ObjectModel": ""
+        },
+      ]
+    },
+    {
+      "name": "Colm O Driscoll",
+      "BlipIcon": -1,
+      "EnterStore": [ 755.0959, -1227.963, 41.84264, 1.5 ],
+      "CameraMain": [ 756.4254, -1228.334, 42.83133, -15.29523, 0.0, 63.289566040039 ],
+      "NPCStore": [ 753.6528, -1226.791, 41.86575, 263.66744995117 ],
+      "SpawnObjectStore": [ -323.2, 803.64, 117.93, 280.42 ],
+      "NPCModel": "CS_ColmODriscoll",
+      "ItemsSell": [
+        {
+          "Name": "moedaantiga", // name in DB Items
+          "SellPrice": 0.15,
+          "ObjectModel": ""
+        },
+        {
+          "Name": "relogiovelho", // name in DB Items
+          "SellPrice": 0.15,
+          "ObjectModel": ""
+        },
+      ]
+    }
+  ]
+}

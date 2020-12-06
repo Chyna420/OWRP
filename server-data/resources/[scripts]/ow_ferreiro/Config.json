@@ -1,0 +1,132 @@
+﻿{
+  "defaultlang": "Es", // set your language
+
+  "Stores": [
+    {
+      "name": "Ferreiro",
+      "NPCModel": "S_M_M_STRDEALER_01",
+      "BlipIcon": 2107754879,
+      "EnterStore": [ -368.3183, 796.6273, 116.3026, 1.5 ],
+      "CameraMain": [ -367.8433, 797.2444, 116.3078, -21.16619, 0.0, 133.301376 ],
+      "NPCStore": [ 2948.69, 1319.2, 44.82, 70.1 ],
+      "SpawnObjectStore": [ 2947.52, 1319.59, 44.98, 70.21 ],
+      "SpawnAmmoInStores": []
+    }
+  ],
+
+  "AmmoGivesOnUse": [
+    {
+      "ammo_bullet_revolver": "AMMO_REVOLVER",
+      "ammo_bullet_pistol": "AMMO_PISTOL",
+      "ammo_shotgun": "AMMO_SHOTGUN",
+      "ammo_bullet_repeater": "AMMO_REPEATER",
+      "ammo_bullet_rifle": "AMMO_RIFLE",
+      "ammo_bullet_varmint": "AMMO_22"
+    }
+  ],
+
+  "Weapons": [
+    {
+      "Name": "Tocha",
+      "HashName": "WEAPON_MELEE_TORCH",
+      "WeaponModel": "p_torch01x",
+      "Price": 0.35,
+      "AmmoHash": [],
+      "CompsHash": []
+    },
+    {
+      "Name": "Cana de Pescar",
+      "HashName": "WEAPON_FISHINGROD",
+      "WeaponModel": "w_melee_fishingpole02",
+      "Price": 1,
+      "AmmoHash": [],
+      "CompsHash": []
+    },
+    {
+      "Name": "Faca de Caça",
+      "HashName": "WEAPON_MELEE_KNIFE",
+      "WeaponModel": "w_melee_knife02",
+      "Price": 0.75,
+      "AmmoHash": [],
+      "CompsHash": [ //Precio Componente
+        {
+          "w_melee_knife02_grip1": 0
+        }
+      ]
+    },
+    {
+      "Name": "Machado",
+      "HashName": "WEAPON_MELEE_HATCHET",
+      "WeaponModel": "w_melee_hatchet01",
+      "Price": 1.5,
+      "AmmoHash": [],
+      "CompsHash": []
+    },
+    {
+      "Name": "Lanterna",
+      "HashName": "weapon_melee_lantern",
+      "WeaponModel": "s_interact_lantern03x_pickup",
+      "Price": 1,
+      "AmmoHash": [],
+      "CompsHash": []
+    },
+    {
+      "Name": "Binóculos",
+      "HashName": "weapon_kit_binoculars",
+      "WeaponModel": "p_binoculars01x",
+      "Price": 2,
+      "AmmoHash": [],
+      "CompsHash": []
+    },
+    {
+      "Name": "Binóculos Melhorados",
+      "HashName": "weapon_kit_binoculars_improved",
+      "WeaponModel": "p_binoculars01x",
+      "Price": 3.5,
+      "AmmoHash": [],
+      "CompsHash": []
+    }
+  ],
+
+  "AmmoLimit": [
+    {
+      "AMMO_TOMAHAWK": 3,
+      "AMMO_TOMAHAWK_IMPROVED": 3,
+      "AMMO_TOMAHAWK_HOMING": 3,
+      "AMMO_THROWING_KNIVES": 8,
+      "AMMO_THROWING_KNIVES_IMPROVED": 8,
+      "AMMO_THROWING_KNIVES_POISON": 8,
+      "AMMO_ARROW": 25,
+      "AMMO_ARROW_DYNAMITE": 4,
+      "AMMO_ARROW_FIRE": 8,
+      "AMMO_ARROW_IMPROVED": 25,
+      "AMMO_ARROW_POISON": 8,
+      "AMMO_ARROW_SMALL_GAME": 40,
+      "AMMO_PISTOL": 100,
+      "AMMO_PISTOL_EXPRESS": 100,
+      "AMMO_PISTOL_EXPRESS_EXPLOSIVE": 10,
+      "AMMO_PISTOL_HIGH_VELOCITY": 100,
+      "AMMO_PISTOL_SPLIT_POINT": 50,
+      "AMMO_REVOLVER": 200,
+      "AMMO_REVOLVER_EXPRESS": 200,
+      "AMMO_REVOLVER_EXPRESS_EXPLOSIVE": 10,
+      "AMMO_REVOLVER_HIGH_VELOCITY": 200,
+      "AMMO_REVOLVER_SPLIT_POINT": 100,
+      "AMMO_22": 100, // No recarga el arma
+      "AMMO_REPEATER": 200,
+      "AMMO_REPEATER_EXPRESS": 200,
+      "AMMO_REPEATER_EXPRESS_EXPLOSIVE": 10,
+      "AMMO_REPEATER_HIGH_VELOCITY": 200,
+      "AMMO_REPEATER_SPLIT_POINT": 100, // No aparecen en el inventario aunque las hayas comprado
+      "AMMO_RIFLE": 100,
+      "AMMO_RIFLE_EXPRESS": 100,
+      "AMMO_RIFLE_EXPRESS_EXPLOSIVE": 10,
+      "AMMO_RIFLE_HIGH_VELOCITY": 100,
+      "AMMO_RIFLE_SPLIT_POINT": 50,
+      "AMMO_SHOTGUN": 60,
+      "AMMO_SHOTGUN_BUCKSHOT_INCENDIARY": 14,
+      "AMMO_SHOTGUN_EXPRESS_EXPLOSIVE": 14, // No aparecen en el inventario aunque las hayas comprado
+      "AMMO_SHOTGUN_SLUG": 60
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "PressToOpen": "Pressione [~e~Space~q~] para acessar o barbeiro",
+
+    "TitleBarberMenu": "Barbearia",
+    "SubTitleBarberMenu": "Cortes de cabelo",
+    "BeardList": "Cortes de barba",
+    "BeardDesc": "Escolhe o corte que mais gostas.",
+    "Beard": "Barba #",
+    "NoBeard": "Sem barba",
+    "HairList": "Cortes de cabelo",
+    "HairDesc": "Escolhe o corte que mais gostas.",
+    "Hair": "Cabelo #",
+    "NoHair": "Sem cabelo",
+    "NoExist": "Não há",
+    "FinishBtn": "Preço do corte por {0}$",
+    "SubFinishBtn": "Concluir e pagar",
+    "NoMoney": "Não tens dinheiro suficiente",
+    "Bought": "Pagas-te {0}$ ao barbeiro"
+}

@@ -1,0 +1,51 @@
+{
+  "defaultlang": "Es", // set your language
+
+
+  //Price of Categories
+  "costHats": 0.02,
+  "costEyeWear": 0.02,
+  "costNeckWear": 0.02,
+  "costMask": 0.02,
+  "costNeckTies": 0.02,
+  "costShirt": 0.02,
+  "costSuspender": 0.02,
+  "costVest": 0.02,
+  "costCoat": 0.02,
+  "costCoatClosed": 0.02,
+  "costPoncho": 0.02,
+  "costCloak": 0.02,
+  "costGlove": 0.02,
+  "costRingRh": 0.02,
+  "costRingLh": 0.02,
+  "costBracelet": 0.02,
+  "costGunbelt": 0.02,
+  "costBelt": 0.02,
+  "costBuckle": 0.02,
+  "costHolster": 0.02,
+  "costPant": 0.02,
+  "costSkirt": 0.02,
+  "costChap": 0.02,
+  "costBoots": 0.02,
+  "costSpurs": 0.02,
+  //end
+
+  "Stores": [
+    {
+      "name": "Loja de Roupa", // Valentine
+      "BlipIcon": 1195729388,
+      "EnterStore": [ -325.99, 774.77, 117.46, 2.0 ],
+      "ExitWardrobe": [ -322.57, 771.95, 116.44, 23.65 ],
+      "Cameras": [
+        [ -326.5601, 776.4949, 122.2295, -15.07608, 0.0, 124.8089 ],
+        [ -328.5588, 775.3238, 122.8339, -27.55054, 0.0, 113.3157 ], // Head
+        [ -328.5489, 775.331, 122.0722, -11.07298, 0.0, 111.5303 ], // Torso and Belt
+        [ -328.5584, 775.3353, 121.3246, -19.40872, 0.0, 109.0525 ] // Boots and Pants
+      ],
+      "StoreRoom": [ -329.31, 775.11, 120.63, 294.79 ],
+      "DoorRoom": [ -321.92, 764.86, 117.44 ],
+      "NPCStore": [ -325.67, 772.63, 116.44, 11.3 ]
+    }
+  ]
+
+}

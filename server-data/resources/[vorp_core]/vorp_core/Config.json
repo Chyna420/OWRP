@@ -1,0 +1,40 @@
+{
+  "defaultlang": "Es",
+  "initGold": 0.0,
+  "initMoney": 10.0,
+  "initRol": 0.0,
+  "initXp": 0,
+  "initJob": "Civil",
+  "initJobGrade": 0,
+  "initGroup": "user",
+  "Whitelist": true,
+  "AllowWhitelistAutoUpdate": false,
+  "MaxCharacters": 2,
+  "ActiveVoiceChat": false,
+  "KeySwapVoiceRange": "0x80F28E95",
+  "DefaultVoiceRange": 5.0,
+  "VoiceRanges": [ 2.0, 5.0, 12.0 ],
+
+  "RespawnTime": 25, // 25 seconds
+  "RespawnKey": "0xDFF812F9",
+  "RespawnTitleFont": 1,
+  "RespawnSubTitleFont": 1,
+  "RespawnCoords": [ -353.08, 752.11, 116.0, 321.76 ], // X, Y, Z, Heading
+
+  "HeadId": true,
+  "HeadIdDistance": 15,
+  "ModeKey": true,
+  "KeyShowIds": "0x8CC9CD42", // Press X 
+
+  "ActiveEagleEye": true,
+  "ActiveDeadEye": false,
+
+  //Discord Rich Precense FEATURE DISABLED Please Wait for Milestone 4
+  "ActiveDRP": false,
+  "DiscordAppId": "null",
+  "RichPresenceText": "Test",
+  "DiscordRichPresenceAsset": "logo_name",
+  "DiscordRichPresenceAssetText": "This server is running with VorpCore",
+  "DiscordRichPresenceAssetSmall": "logo_name",
+  "DiscordRichPresenceAssetSmallText": "vorpcore.com"
+}

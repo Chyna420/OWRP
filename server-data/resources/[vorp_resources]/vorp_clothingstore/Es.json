@@ -1,0 +1,121 @@
+{
+
+  "PressToOpen": "[~e~Espacio~q~] para aceder a loja de roupa", // Título del Menú
+  "PressGuide": "Rodar <-[A] [D]-> | Camaras [W] ou [S]",
+  "TitleMenuOutfitsUseBtn": "Vestir este outfit",
+  "TitleMenuOutfitsDeleteBtn": "Eliminar o Outfit",
+
+  "TitleMenuClothes": "Provador", // Título del Menú
+  "SubTitleMenuClothes": "Veste a tua personagem", // Descripción del Menú
+
+  "NoExistValue": "Não há", // La opción que da cuando no hay opciones en algún apartado
+
+  "NoMoney": "Não tens dinheiro suficiente",
+  "SuccessfulBuy": "Cobraram-te", // Muestra el dinero que te cobran
+
+  "TitleMenuOutfits": "Outfits",
+  "SubTitleMenuOutfits": "Volta a por a tua roupa guardada",
+
+  "PlaceHolderNewOutfit": "Se queres guardar o outfit coloca o nome e guarda",
+  "ButtonNewOutfit": "Guardar Outfit",
+
+  "MaskValue": "Máscaras #",
+  "HatsValue": "Chapéus #", // Las opciones del apartado de los sombreros
+  "GlassesValue": "Óculos #", // Las opciones del apartado de los anteojos
+  "NeckwearValue": "Acessórios pescoço #", // Las opciones del apartado de las prendas para el cuello
+  "TiesValue": "Gravatas #", // Las opciones del apartado de las corbatas
+  "ShirtsValue": "Camisas #", // Las opciones del apartado de las camisas
+  "SuspendersValue": "Suspensórios #", // Las opciones del apartado de los tirantes
+  "VestsValue": "Coletes #", // Las opciones del apartado de los chalecos
+  "CoatsValue": "Casacos #", // Las opciones del apartado de los abrigos
+  "PonchosValue": "Ponchos #", // Las opciones del apartado de los ponchos
+  "CloaksValue": "Capas #", // Las opciones del apartado de las capas
+  "GlovesValue": "Luvas #", // Las opciones del apartado de los guantes
+  "RingsValue": "Anéis #", // Las opciones del apartado de los anillos
+  "BraceletsValue": "Pulseiras #", // Las opciones del apartado de las pulseras
+  "HolstersValue": "Coldre #", // Las opciones del apartado de las cartucheras
+  "BeltsValue": "Cintos #", // Las opciones del apartado de los cinturones
+  "BucklesValue": "Fivelas #", // Las opciones del apartado de las hebillas
+  "PantsValue": "Calças #", // Las opciones del apartado de los pantalones
+  "SkirtsValue": "Saias #", // Las opciones del apartado de las faldas
+  "ChapsValue": "Proteção para calças #", // Las opciones del apartado de los zahones
+  "BootsValue": "Botas #", // Las opciones del apartado de las botas
+  "SpursValue": "Esporas #", // Las opciones del apartado de las espuelas
+  "NoHatsValue": "Sem chapéu", // La opción que da cuando no hay opciones
+  "NoGlassesValue": "Sem óculos", // La opción que da cuando no hay opciones
+  "NoNeckwearValue": "Pescoço descoberto", // La opción que da cuando no hay opciones
+  "NoTiesValue": "Sem gravata", // La opción que da cuando no hay opciones
+  "NoShirtsValue": "Sem Camisa", // La opción que da cuando no hay opciones
+  "NoSuspendersValue": "Sem suspensórios", // La opción que da cuando no hay opciones
+  "NoVestsValue": "Sem colete", // La opción que da cuando no hay opciones
+  "NoCoatsValue": "Sem casaco", // La opción que da cuando no hay opciones
+  "NoPonchosValue": "Sem Poncho", // La opción que da cuando no hay opciones
+  "NoCloaksValue": "Sem Capa", // La opción que da cuando no hay opciones
+  "NoGlovesValue": "Sem luvas", // La opción que da cuando no hay opciones
+  "NoRingsValue": "Sem anel", // La opción que da cuando no hay opciones
+  "NoBraceletsValue": "Sem pulseira", // La opción que da cuando no hay opciones
+  "NoHolstersValue": "Sem coldre", // La opción que da cuando no hay opciones
+  "NoBeltsValue": "Sem cinto", // La opción que da cuando no hay opciones
+  "NoBucklesValue": "Sem fivela", // La opción que da cuando no hay opciones
+  "NoPantsValue": "Sem calça", // La opción que da cuando no hay opciones
+  "NoSkirtsValue": "Sem saia", // La opción que da cuando no hay opciones
+  "NoChapsValue": " Sem proteção para calças", // La opción que da cuando no hay opciones
+  "NoBootsValue": "Sem Botas", // La opción que da cuando no hay opciones
+  "NoSpursValue": "Sem esporas", // La opción que da cuando no hay opciones
+  "NoMaskValue": "Sem Máscara", // La opción que da cuando no hay opciones
+
+  "Hats": "Chapéu",
+  "Glasses": "Óculos",
+  "Masks": "Máscaras",
+  "Neckwear": "Acessórios para o pescoço",
+  "Ties": "Gravatas",
+  "Shirts": "Camisas",
+  "Suspenders": "Suspensórios",
+  "Vests": "Coletes",
+  "Coats": "Casacos",
+  "CoatsClosed": "Casacos fechados",
+  "Ponchos": "Ponchos",
+  "Cloaks": "Capas",
+  "Gloves": "Luvas",
+  "RightRings": "Anéis da mão direita",
+  "LeftRings": "Anéis da mão esquerda",
+  "Bracelets": "Pulseiras",
+  "PrimaryHolsters": "Coldre principal",
+  "Belts": "Cintos",
+  "Buckles": "Fivelas",
+  "SecondaryHolsters": "Coldre secundário",
+  "Pants": "Calças",
+  "Skirts": "Saias",
+  "Chaps": "Proteção de calças",
+  "Boots": "Botas",
+  "Spurs": "Esporas",
+
+  "Finish": "Comprar Roupa", // Confirma la compra
+
+  //Descripciones de los apartados del Menú de la ropa
+  "HatsDesc": "Escolher chapéu",
+  "GlassesDesc": "Escolher óculos",
+  "MasksDesc": "Escolher máscara",
+  "NeckwearDesc": "Escolher acessório de pescoço",
+  "TiesDesc": "Escolher gravata",
+  "ShirtsDesc": "Escolher camisa",
+  "SuspendersDesc": "Escolher suspensórios",
+  "VestsDesc": "Escolher colete",
+  "CoatsDesc": "Escolher casaco",
+  "PonchosDesc": "Escolher poncho",
+  "CloaksDesc": "Escolher capa",
+  "GlovesDesc": "Escolher luvas",
+  "RightRingsDesc": "Escolher anéis da mão direita",
+  "LeftRingsDesc": "Escolher anéis da mão esquerda",
+  "BraceletsDesc": "Escolher pulseira",
+  "PrimaryHolstersDesc": "Escolher coldre principal",
+  "BeltsDesc": "Escolher cinto",
+  "BucklesDesc": "Escolher fivela",
+  "SecondaryHolstersDesc": "Escolher coldre secundário",
+  "PantsDesc": "Escolher calças",
+  "SkirtsDesc": "Escolher saia",
+  "ChapsDesc": "Escolher proteção de calças",
+  "BootsDesc": "Escolher botas",
+  "SpursDesc": "Escolher esporas",
+  "FinishDesc": "Confirmo que estou lindo."
+}

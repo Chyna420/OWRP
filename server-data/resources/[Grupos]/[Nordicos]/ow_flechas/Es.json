@@ -1,0 +1,90 @@
+﻿{
+  "PressToOpen": "",
+  "MenuMainDesc": "Compre as suas ferramentas",
+  "MenuMainButtonBuyWeapons": "Comprar Ferramentas",
+  "MenuBuyWeaponsDesc": "Confirmar compra",
+  "MenuBuyWeaponsButtonNo": "Devolver",
+  "MenuBuyWeaponsButtonYes": "Comprar por {0}$",
+  "YouBoughtWeapon": "Compras-te {0} por {1}$",
+
+  "MenuMainButtonBuyAmmo": "Comprar Munição",
+  //"MenuBuyAmmoDesc": "Confirmar la compra",
+  //"MenuBuyAmmoButtonNo": "Volver",
+  //"MenuBuyAmmoButtonYes": "Comprar por {0}$",
+
+  "MenuMainButtonManageWeapon": "Gerir Ferramentas",
+  "MenuManageWeaponDesc": "Gerir as tuas Ferramentas",
+  "MenuManageAmmo": "Comprar Munição",
+  "MenuManageAmmoDesc": "Escolhe a munição",
+  "ManageAmmoRestockMenu": "Reabastecer munição",
+  "ManageAmmoRestockBtnRestock": "({0}/{1}) {2}$",
+  "ManageAmmoRestockBtnFull": "Carregador Cheio",
+  //"MenuManageWeaponButtonNo": "Volver",
+  //"MenuManageWeaponButtonYes": "Comprar por {0}$",
+
+  "NoMoney": "Não tens dinheiro suficiente",
+  "AmmoIsFull": "Não podes usar o carregador até que tenhas gasto pelo menos 10 balas",
+  "IncorretWeapon": "Este carregador não dá para esta arma",
+  "NeedWeaponOnHand":  "Precisas de ter uma arma na mão",
+
+  // Flechas
+  "AMMO_ARROW": "Flechas",
+  "AMMO_ARROW_DYNAMITE": "Flechas explosivas",
+  "AMMO_ARROW_FIRE": "Flechas incendiarias",
+  "AMMO_ARROW_IMPROVED": "Flechas melhoradass",
+  "AMMO_ARROW_POISON": "Flechas envenenadas",
+  "AMMO_ARROW_SMALL_GAME": "Flechas para presas pequenas",
+
+  // Munição de pistola
+  "AMMO_PISTOL": "Munição normal",
+  "AMMO_PISTOL_EXPRESS": "Munição rápida",
+  "AMMO_PISTOL_EXPRESS_EXPLOSIVE": "Munição explosiva",
+  "AMMO_PISTOL_HIGH_VELOCITY": "Munição de alta velocidade",
+  "AMMO_PISTOL_SPLIT_POINT": "Munição de ponta dividida",
+
+  // Munição de revólver
+  "AMMO_REVOLVER": "Munição normal",
+  "AMMO_REVOLVER_EXPRESS": "Munição rápida",
+  "AMMO_REVOLVER_EXPRESS_EXPLOSIVE": "Munição explosiva",
+  "AMMO_REVOLVER_HIGH_VELOCITY": "Munição de alta velocidade",
+  "AMMO_REVOLVER_SPLIT_POINT": "Munição de ponta dividida",
+
+  // Munição de repetidor
+  "AMMO_REPEATER": "Munição normal",
+  "AMMO_REPEATER_EXPRESS": "Munição rápida",
+  "AMMO_REPEATER_EXPRESS_EXPLOSIVE": "Munição explosiva",
+  "AMMO_REPEATER_HIGH_VELOCITY": "Munição de alta velocidade",
+
+  // Munição de fusil
+  "AMMO_RIFLE": "Munição normal",
+  "AMMO_RIFLE_EXPRESS": "Munição rápida",
+  "AMMO_RIFLE_EXPRESS_EXPLOSIVE": "Munição explosiva",
+  "AMMO_RIFLE_HIGH_VELOCITY": "Munição de alta velocidade",
+  "AMMO_RIFLE_SPLIT_POINT": "Munição de ponta dividida",
+
+  // Munição de escopeta
+  "AMMO_SHOTGUN": "Cartuchos normais",
+  "AMMO_SHOTGUN_BUCKSHOT_INCENDIARY": "Balas incendiarias",
+  "AMMO_SHOTGUN_EXPRESS_EXPLOSIVE": "Balas explosivas",
+  "AMMO_SHOTGUN_SLUG": "Cartucho",
+
+  // Munição de Varmint (Caza)
+  "AMMO_22": "Munição Varmint",
+
+  // Facas de arremesso
+  "AMMO_THROWING_KNIVES": "Facas normais",
+  "AMMO_THROWING_KNIVES_IMPROVED": "Facas melhoradas",
+  "AMMO_THROWING_KNIVES_POISON": "Facas envenenadas",
+
+  // Tomahawks
+  "AMMO_TOMAHAWK": "Tomahawk normal",
+  "AMMO_TOMAHAWK_IMPROVED": "Tomahawk melhorado",
+  "AMMO_TOMAHAWK_HOMING": "Tomahawk com cabeça melhorada",
+
+  "ammo_bullet_revolver": "Comprar Munição de Revolver (10x {0}$)",
+  "ammo_bullet_pistol": "Comprar Munição de Pistola (10x {0}$)",
+  "ammo_shotgun": "Comprar Munição de Escopeta (10x {0}$)",
+  "ammo_bullet_repeater": "Comprar Munição de Repetidor (10x {0}$)",
+  "ammo_bullet_rifle": "Comprar Munição de Rifle (10x {0}$)",
+  "ammo_bullet_varmint": "Comprar Munição de Varmin (10x {0}$)"
+}

@@ -1,0 +1,391 @@
+-- --------------------------------------------------------
+-- Anfitrião:                    127.0.0.1
+-- Versão do servidor:           10.4.16-MariaDB - mariadb.org binary distribution
+-- Server OS:                    Win64
+-- HeidiSQL Versão:              11.1.0.6116
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+-- Dumping database structure for vorp
+DROP DATABASE IF EXISTS `vorp`;
+CREATE DATABASE IF NOT EXISTS `vorp` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+USE `vorp`;
+
+-- Dumping structure for table vorp.banks
+DROP TABLE IF EXISTS `banks`;
+CREATE TABLE IF NOT EXISTS `banks` (
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Dumping data for table vorp.banks: ~3 rows (approximately)
+/*!40000 ALTER TABLE `banks` DISABLE KEYS */;
+INSERT INTO `banks` (`name`) VALUES
+	('Blackwater'),
+	('Saint Denis'),
+	('Valentine');
+/*!40000 ALTER TABLE `banks` ENABLE KEYS */;
+
+-- Dumping structure for table vorp.bank_users
+DROP TABLE IF EXISTS `bank_users`;
+CREATE TABLE IF NOT EXISTS `bank_users` (
+  `name` varchar(50) NOT NULL,
+  `identifier` varchar(50) NOT NULL,
+  `charidentifier` int(11) NOT NULL,
+  `money` double(22,2) DEFAULT 0.00,
+  `gold` double(22,2) DEFAULT 0.00,
+  KEY `name` (`name`),
+  CONSTRAINT `bank` FOREIGN KEY (`name`) REFERENCES `banks` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Dumping data for table vorp.bank_users: ~0 rows (approximately)
+/*!40000 ALTER TABLE `bank_users` DISABLE KEYS */;
+/*!40000 ALTER TABLE `bank_users` ENABLE KEYS */;
+
+-- Dumping structure for table vorp.banneds
+DROP TABLE IF EXISTS `banneds`;
+CREATE TABLE IF NOT EXISTS `banneds` (
+  `b_id` int(11) NOT NULL AUTO_INCREMENT,
+  `b_steam` varchar(100) NOT NULL,
+  `b_license` varchar(255) DEFAULT NULL,
+  `b_discord` varchar(100) DEFAULT NULL,
+  `b_reason` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `b_banned` varchar(100) NOT NULL,
+  `b_unban` varchar(100) NOT NULL,
+  `b_permanent` tinyint(1) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`b_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC;
+
+-- Dumping data for table vorp.banneds: ~0 rows (approximately)
+/*!40000 ALTER TABLE `banneds` DISABLE KEYS */;
+/*!40000 ALTER TABLE `banneds` ENABLE KEYS */;
+
+-- Dumping structure for table vorp.characters
+DROP TABLE IF EXISTS `characters`;
+CREATE TABLE IF NOT EXISTS `characters` (
+  `identifier` varchar(50) COLLATE utf8mb4_bin NOT NULL DEFAULT '',
+  `charidentifier` int(11) NOT NULL AUTO_INCREMENT,
+  `group` varchar(10) COLLATE utf8mb4_bin DEFAULT 'user',
+  `money` double(11,2) DEFAULT 0.00,
+  `gold` double(11,2) DEFAULT 0.00,
+  `rol` double(11,2) NOT NULL DEFAULT 0.00,
+  `xp` int(11) DEFAULT 0,
+  `inventory` longtext COLLATE utf8mb4_bin DEFAULT NULL,
+  `job` varchar(50) COLLATE utf8mb4_bin DEFAULT 'unemployed',
+  `status` varchar(140) COLLATE utf8mb4_bin DEFAULT '{}',
+  `firstname` varchar(50) COLLATE utf8mb4_bin DEFAULT ' ',
+  `lastname` varchar(50) COLLATE utf8mb4_bin DEFAULT ' ',
+  `skinPlayer` longtext COLLATE utf8mb4_bin DEFAULT NULL,
+  `compPlayer` longtext COLLATE utf8mb4_bin DEFAULT NULL,
+  `jobgrade` int(11) DEFAULT 0,
+  `coords` varchar(75) COLLATE utf8mb4_bin DEFAULT '{}',
+  `isdead` tinyint(1) DEFAULT 0,
+  UNIQUE KEY `identifier_charidentifier` (`identifier`,`charidentifier`) USING BTREE,
+  KEY `charidentifier` (`charidentifier`) USING BTREE,
+  CONSTRAINT `FK_characters_users` FOREIGN KEY (`identifier`) REFERENCES `users` (`identifier`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin ROW_FORMAT=DYNAMIC;
+
+-- Dumping data for table vorp.characters: ~4 rows (approximately)
+/*!40000 ALTER TABLE `characters` DISABLE KEYS */;
+INSERT INTO `characters` (`identifier`, `charidentifier`, `group`, `money`, `gold`, `rol`, `xp`, `inventory`, `job`, `status`, `firstname`, `lastname`, `skinPlayer`, `compPlayer`, `jobgrade`, `coords`, `isdead`) VALUES
+	('steam:11000010edd51dd', 1, 'admin', 88898194.00, 0.00, 0.00, 302, '{"wood":6}', 'none', '{\r\n  "Hunger": 836,\r\n  "Thirst": 675,\r\n  "Metabolism": -2158\r\n}', 'AD', 'AD', '{"sex":"mp_male","HeadType":0,"BodyType":0,"LegsType":0,"HeadSize":0.0,"EyeBrowH":0.0,"EyeBrowW":0.0,"EyeBrowD":0.0,"EarsH":0.0,"EarsW":0.0,"EarsD":0.0,"EarsL":0.0,"EyeLidH":0.0,"EyeLidW":0.0,"EyeD":0.0,"EyeAng":0.0,"EyeDis":0.0,"EyeH":0.0,"NoseW":0.0,"NoseS":0.0,"NoseH":0.0,"NoseAng":0.0,"NoseC":0.0,"NoseDis":0.0,"CheekBonesH":0.0,"CheekBonesW":0.0,"CheekBonesD":0.0,"MouthW":0.0,"MouthD":0.0,"MouthX":0.0,"MouthY":0.0,"ULiphH":0.0,"ULiphW":0.0,"ULiphD":0.0,"LLiphH":0.0,"LLiphW":0.0,"LLiphD":0.0,"JawH":0.0,"JawW":0.0,"JawD":0.0,"ChinH":0.0,"ChinW":0.0,"ChinD":0.0,"Beard":0,"Hair":0,"Body":0,"Waist":0,"Eyes":0,"Scale":0.8,"eyebrows_visibility":0,"eyebrows_tx_id":0,"scars_visibility":0,"scars_tx_id":0,"spots_visibility":0,"spots_tx_id":0,"disc_visibility":0,"disc_tx_id":0,"complex_visibility":0,"complex_tx_id":0,"acne_visibility":0,"acne_tx_id":0,"ageing_visibility":0,"ageing_tx_id":0,"freckles_visibility":0,"freckles_tx_id":0,"moles_visibility":0,"moles_tx_id":0,"grime_visibility":0,"grime_tx_id":0,"lipsticks_visibility":0,"lipsticks_tx_id":0,"lipsticks_palette_id":0,"lipsticks_palette_color_primary":0,"shadows_visibility":0,"shadows_tx_id":0,"shadows_palette_id":0,"shadows_palette_color_primary":0,"albedo":317354806}', '{"Hat":-1,"EyeWear":-1,"Mask":-1,"NeckWear":-1,"NeckTies":-1,"Shirt":-1,"Suspender":-1,"Vest":-1,"Coat":-1,"Poncho":-1,"Cloak":-1,"Glove":-1,"RingRh":-1,"RingLh":-1,"Bracelet":-1,"Gunbelt":-1,"Belt":-1,"Buckle":-1,"Holster":-1,"Pant":-1,"Skirt":-1,"Chap":-1,"Boots":-1,"Spurs":-1,"CoatClosed":-1}', 0, '{"x":-355.321,"y":757.687744,"z":116.212242,"heading":339.123749}', 0),
+	('steam:110000110ceb4ee', 3, 'admin', 998197.50, 0.00, 0.00, 600, '{"wood":36}', 'none', '{\r\n  "Hunger": 943,\r\n  "Thirst": 891,\r\n  "Metabolism": -1094\r\n}', 'cona', 'da', '{"sex":"mp_male","HeadType":270415694,"BodyType":1773547611,"LegsType":1389117221,"HeadSize":0.0,"EyeBrowH":0.0,"EyeBrowW":0.0,"EyeBrowD":0.0,"EarsH":0.0,"EarsW":0.0,"EarsD":0.0,"EarsL":0.0,"EyeLidH":0.0,"EyeLidW":0.0,"EyeD":0.0,"EyeAng":0.0,"EyeDis":0.0,"EyeH":0.0,"NoseW":0.0,"NoseS":0.0,"NoseH":0.0,"NoseAng":0.0,"NoseC":0.0,"NoseDis":0.0,"CheekBonesH":0.0,"CheekBonesW":0.0,"CheekBonesD":0.0,"MouthW":0.0,"MouthD":0.0,"MouthX":0.0,"MouthY":0.0,"ULiphH":0.0,"ULiphW":0.0,"ULiphD":0.0,"LLiphH":0.0,"LLiphW":0.0,"LLiphD":0.0,"JawH":0.0,"JawW":0.0,"JawD":0.0,"ChinH":0.0,"ChinW":0.0,"ChinD":0.0,"Beard":0,"Hair":0,"Body":0,"Waist":0,"Eyes":0,"Scale":0.8,"eyebrows_visibility":0,"eyebrows_tx_id":0,"scars_visibility":0,"scars_tx_id":0,"spots_visibility":0,"spots_tx_id":0,"disc_visibility":0,"disc_tx_id":0,"complex_visibility":0,"complex_tx_id":0,"acne_visibility":0,"acne_tx_id":0,"ageing_visibility":0,"ageing_tx_id":0,"freckles_visibility":0,"freckles_tx_id":0,"moles_visibility":0,"moles_tx_id":0,"grime_visibility":0,"grime_tx_id":0,"lipsticks_visibility":0,"lipsticks_tx_id":0,"lipsticks_palette_id":0,"lipsticks_palette_color_primary":0,"shadows_visibility":0,"shadows_tx_id":0,"shadows_palette_id":0,"shadows_palette_color_primary":0,"albedo":534485063}', '{"Hat":-1,"EyeWear":-1,"Mask":-1,"NeckWear":-1,"NeckTies":-1,"Shirt":-1,"Suspender":-1,"Vest":-1,"Coat":-1,"Poncho":-1,"Cloak":-1,"Glove":-1,"RingRh":-1,"RingLh":-1,"Bracelet":-1,"Gunbelt":-1,"Belt":-1,"Buckle":-1,"Holster":-1,"Pant":-1,"Skirt":-1,"Chap":-1,"Boots":-1,"Spurs":-1,"CoatClosed":-1}', 0, '{"x":-1374.545,"y":-296.8398,"z":101.144836,"heading":307.8055}', 0),
+	('steam:110000110ceb4ee', 5, 'user', 0.00, 0.00, 0.00, 0, '{}', 'none', '{}', 'cona', 'do', '{"sex":"mp_male","HeadType":0,"BodyType":0,"LegsType":0,"HeadSize":0.4,"EyeBrowH":0.6,"EyeBrowW":0.0,"EyeBrowD":0.0,"EarsH":0.0,"EarsW":0.0,"EarsD":0.0,"EarsL":0.0,"EyeLidH":0.0,"EyeLidW":0.0,"EyeD":0.0,"EyeAng":0.0,"EyeDis":0.0,"EyeH":0.0,"NoseW":0.0,"NoseS":0.0,"NoseH":0.0,"NoseAng":0.0,"NoseC":0.0,"NoseDis":0.0,"CheekBonesH":0.0,"CheekBonesW":0.0,"CheekBonesD":0.0,"MouthW":0.0,"MouthD":0.0,"MouthX":0.0,"MouthY":0.0,"ULiphH":0.0,"ULiphW":0.0,"ULiphD":0.0,"LLiphH":0.0,"LLiphW":0.0,"LLiphD":0.0,"JawH":0.0,"JawW":0.0,"JawD":0.0,"ChinH":0.0,"ChinW":0.0,"ChinD":0.0,"Beard":0,"Hair":0,"Body":0,"Waist":0,"Eyes":0,"Scale":0.8,"eyebrows_visibility":0,"eyebrows_tx_id":0,"scars_visibility":0,"scars_tx_id":0,"spots_visibility":0,"spots_tx_id":0,"disc_visibility":0,"disc_tx_id":0,"complex_visibility":0,"complex_tx_id":0,"acne_visibility":0,"acne_tx_id":0,"ageing_visibility":0,"ageing_tx_id":0,"freckles_visibility":0,"freckles_tx_id":0,"moles_visibility":0,"moles_tx_id":0,"grime_visibility":0,"grime_tx_id":0,"lipsticks_visibility":0,"lipsticks_tx_id":0,"lipsticks_palette_id":0,"lipsticks_palette_color_primary":0,"shadows_visibility":0,"shadows_tx_id":0,"shadows_palette_id":0,"shadows_palette_color_primary":0,"albedo":317354806}', '{"Hat":63411059,"EyeWear":143997640,"Mask":484652361,"NeckWear":-1,"NeckTies":278804881,"Shirt":35265146,"Suspender":2756271934,"Vest":-1,"Coat":55774106,"Poncho":-1,"Cloak":-1,"Glove":-1,"RingRh":-1,"RingLh":-1,"Bracelet":-1,"Gunbelt":-1,"Belt":1473136074,"Buckle":-1,"Holster":-1,"Pant":-1,"Skirt":-1,"Chap":-1,"Boots":-1,"Spurs":-1,"CoatClosed":-1}', 0, '{"x":-357.993439,"y":794.5922,"z":116.052742,"heading":192.055969}', 0),
+	('steam:110000132eb5284', 4, 'admin', 9999500.00, 0.00, 0.00, 0, '{}', 'none', '{\r\n  "Hunger": 953,\r\n  "Thirst": 909,\r\n  "Metabolism": -346\r\n}', 'Molly', 'Brown', '{"sex":"mp_female","HeadType":1999601735,"BodyType":1679300899,"LegsType":996487218,"HeadSize":0.4,"EyeBrowH":0.1,"EyeBrowW":0.0,"EyeBrowD":0.0,"EarsH":0.0,"EarsW":0.1,"EarsD":0.1,"EarsL":0.0,"EyeLidH":0.0,"EyeLidW":0.0,"EyeD":0.0,"EyeAng":0.0,"EyeDis":0.0,"EyeH":0.0,"NoseW":0.2,"NoseS":0.0,"NoseH":0.4,"NoseAng":0.5,"NoseC":0.0,"NoseDis":0.0,"CheekBonesH":0.0,"CheekBonesW":0.0,"CheekBonesD":0.0,"MouthW":0.0,"MouthD":0.0,"MouthX":0.0,"MouthY":0.0,"ULiphH":0.0,"ULiphW":0.0,"ULiphD":0.0,"LLiphH":0.0,"LLiphW":0.0,"LLiphD":0.0,"JawH":0.0,"JawW":0.4,"JawD":0.0,"ChinH":0.0,"ChinW":0.0,"ChinD":0.0,"Beard":0,"Hair":348879995,"Body":3053080007,"Waist":2549153037,"Eyes":2273169671,"Scale":1.0,"eyebrows_visibility":1,"eyebrows_tx_id":11,"scars_visibility":0,"scars_tx_id":0,"spots_visibility":0,"spots_tx_id":0,"disc_visibility":0,"disc_tx_id":0,"complex_visibility":0,"complex_tx_id":0,"acne_visibility":0,"acne_tx_id":0,"ageing_visibility":0,"ageing_tx_id":0,"freckles_visibility":0,"freckles_tx_id":0,"moles_visibility":0,"moles_tx_id":0,"grime_visibility":0,"grime_tx_id":0,"lipsticks_visibility":1,"lipsticks_tx_id":0,"lipsticks_palette_id":0,"lipsticks_palette_color_primary":1,"shadows_visibility":1,"shadows_tx_id":0,"shadows_palette_id":9,"shadows_palette_color_primary":9,"albedo":-1532879544}', '{"Hat":197321496,"EyeWear":25757734,"Mask":-1,"NeckWear":-1,"NeckTies":-1,"Shirt":2122781167,"Suspender":-1,"Vest":-1,"Coat":538640747,"Poncho":-1,"Cloak":-1,"Glove":-1,"RingRh":2891440640,"RingLh":763602120,"Bracelet":-1,"Gunbelt":1151031416,"Belt":434651734,"Buckle":200683969,"Holster":-1,"Pant":3504591172,"Skirt":-1,"Chap":-1,"Boots":1871575679,"Spurs":-1,"CoatClosed":-1}', 0, '{"x":2521.34521,"y":-1289.70508,"z":48.87812,"heading":151.990875}', 0),
+	('steam:11000013c25cbef', 2, 'admin', 97571.00, 0.00, 0.00, 0, '{}', 'none', '{\r\n  "Hunger": 882,\r\n  "Thirst": 767,\r\n  "Metabolism": -1088\r\n}', 'Jhon', 'Wild', '{"sex":"mp_male","HeadType":0,"BodyType":0,"LegsType":0,"HeadSize":0.0,"EyeBrowH":0.0,"EyeBrowW":0.0,"EyeBrowD":0.0,"EarsH":0.0,"EarsW":0.0,"EarsD":0.0,"EarsL":0.0,"EyeLidH":0.0,"EyeLidW":0.0,"EyeD":0.0,"EyeAng":0.0,"EyeDis":0.0,"EyeH":0.0,"NoseW":0.0,"NoseS":0.0,"NoseH":0.0,"NoseAng":0.0,"NoseC":0.0,"NoseDis":0.0,"CheekBonesH":0.0,"CheekBonesW":0.0,"CheekBonesD":0.0,"MouthW":0.0,"MouthD":0.0,"MouthX":0.0,"MouthY":0.0,"ULiphH":0.0,"ULiphW":0.0,"ULiphD":0.0,"LLiphH":0.0,"LLiphW":0.0,"LLiphD":0.0,"JawH":0.0,"JawW":0.0,"JawD":0.0,"ChinH":0.0,"ChinW":0.0,"ChinD":0.0,"Beard":0,"Hair":0,"Body":0,"Waist":0,"Eyes":0,"Scale":1.2,"eyebrows_visibility":0,"eyebrows_tx_id":0,"scars_visibility":0,"scars_tx_id":0,"spots_visibility":0,"spots_tx_id":0,"disc_visibility":0,"disc_tx_id":0,"complex_visibility":0,"complex_tx_id":0,"acne_visibility":0,"acne_tx_id":0,"ageing_visibility":0,"ageing_tx_id":0,"freckles_visibility":0,"freckles_tx_id":0,"moles_visibility":0,"moles_tx_id":0,"grime_visibility":0,"grime_tx_id":0,"lipsticks_visibility":0,"lipsticks_tx_id":0,"lipsticks_palette_id":0,"lipsticks_palette_color_primary":0,"shadows_visibility":0,"shadows_tx_id":0,"shadows_palette_id":0,"shadows_palette_color_primary":0,"albedo":317354806}', '{"Hat":-1,"EyeWear":-1,"Mask":-1,"NeckWear":-1,"NeckTies":-1,"Shirt":-1,"Suspender":-1,"Vest":-1,"Coat":-1,"Poncho":-1,"Cloak":-1,"Glove":-1,"RingRh":-1,"RingLh":-1,"Bracelet":-1,"Gunbelt":-1,"Belt":-1,"Buckle":-1,"Holster":-1,"Pant":-1,"Skirt":-1,"Chap":-1,"Boots":-1,"Spurs":-1,"CoatClosed":-1}', 0, '{"x":-354.51004,"y":787.2371,"z":116.263313,"heading":275.5457}', 0);
+/*!40000 ALTER TABLE `characters` ENABLE KEYS */;
+
+-- Dumping structure for table vorp.horse_complements
+DROP TABLE IF EXISTS `horse_complements`;
+CREATE TABLE IF NOT EXISTS `horse_complements` (
+  `identifier` varchar(50) NOT NULL,
+  `charidentifier` int(11) NOT NULL,
+  `complements` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
+  UNIQUE KEY `identifier` (`identifier`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC;
+
+-- Dumping data for table vorp.horse_complements: ~2 rows (approximately)
+/*!40000 ALTER TABLE `horse_complements` DISABLE KEYS */;
+INSERT INTO `horse_complements` (`identifier`, `charidentifier`, `complements`) VALUES
+	('steam:11000010edd51dd', 1, '[3730450693,310248466,2920349719,1390155208,568909306,3186728837,1174316760]'),
+	('steam:11000013c25cbef', 2, '[3231179052,276665752,3826290009,1824076046,275341736,659832507,1667119228,3372743849]');
+/*!40000 ALTER TABLE `horse_complements` ENABLE KEYS */;
+
+-- Dumping structure for table vorp.housing
+DROP TABLE IF EXISTS `housing`;
+CREATE TABLE IF NOT EXISTS `housing` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `identifier` varchar(255) DEFAULT NULL,
+  `charidentifier` int(11) NOT NULL,
+  `inventory` longtext DEFAULT NULL,
+  `furniture` longtext DEFAULT NULL,
+  `open` tinyint(1) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=34307 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC;
+
+-- Dumping data for table vorp.housing: ~0 rows (approximately)
+/*!40000 ALTER TABLE `housing` DISABLE KEYS */;
+/*!40000 ALTER TABLE `housing` ENABLE KEYS */;
+
+-- Dumping structure for table vorp.items
+DROP TABLE IF EXISTS `items`;
+CREATE TABLE IF NOT EXISTS `items` (
+  `item` varchar(50) NOT NULL,
+  `label` varchar(50) NOT NULL,
+  `limit` int(11) NOT NULL DEFAULT 1,
+  `can_remove` tinyint(1) NOT NULL DEFAULT 1,
+  `type` varchar(50) DEFAULT NULL,
+  `usable` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`item`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC;
+
+-- Dumping data for table vorp.items: ~46 rows (approximately)
+/*!40000 ALTER TABLE `items` DISABLE KEYS */;
+INSERT INTO `items` (`item`, `label`, `limit`, `can_remove`, `type`, `usable`) VALUES
+	('ammo_bullet_pistol', 'Munición de Pistola', 10, 1, 'item_standard', 1),
+	('ammo_bullet_repeater', 'Munición de Repetición', 10, 1, 'item_standard', 1),
+	('ammo_bullet_revolver', 'Munición de Revolver', 10, 1, 'item_standard', 1),
+	('ammo_bullet_rifle', 'Munición de Rifle', 1, 1, 'item_standard', 1),
+	('ammo_bullet_varmint', 'Munición de Varmint', 1, 1, 'item_standard', 1),
+	('ammo_shotgun', 'Munición de Escopeta', 10, 1, 'item_standard', 1),
+	('apple', 'Maçã', -1, 1, 'item_standard', 1),
+	('appleCrumbMash', 'Purê de maçã', -1, 1, 'item_standard', 0),
+	('appleCrumbMoonshine', 'Crumb Moonshine ', -1, 1, 'item_standard', 0),
+	('a_c_fishbluegil_01_ms', 'Pez sol mediano', 3, 1, 'item_standard', 0),
+	('a_c_fishbluegil_01_sm', 'Pez sol pequeño', 5, 1, 'item_standard', 0),
+	('a_c_fishbullheadcat_01_ms', 'Bagre cabeza de toro mediano', 3, 1, 'item_standard', 0),
+	('a_c_fishbullheadcat_01_sm', 'Bagre cabeza de toro pequeño', 5, 1, 'item_standard', 0),
+	('a_c_fishchainpickerel_01_ms', 'Lucio cadena mediano', 3, 1, 'item_standard', 0),
+	('a_c_fishchainpickerel_01_sm', 'Lucio cadena pequeño', 5, 1, 'item_standard', 0),
+	('a_c_fishlargemouthbass_01_ms', 'Perca americana', 3, 1, 'item_standard', 0),
+	('a_c_fishperch_01_ms', 'Perca mediana', 3, 1, 'item_standard', 0),
+	('a_c_fishperch_01_sm', 'Perca pequeña', 5, 1, 'item_standard', 0),
+	('a_c_fishrainbowtrout_01_ms', 'Trucha cabeza de acero', 3, 1, 'item_standard', 0),
+	('a_c_fishredfinpickerel_01_ms', 'Lucio americano de aleta roja mediano', 3, 1, 'item_standard', 0),
+	('a_c_fishredfinpickerel_01_sm', 'Lucio americano de aleta roja pequeño', 5, 1, 'item_standard', 0),
+	('a_c_fishrockbass_01_ms', 'Lubina de roca mediana', 3, 1, 'item_standard', 0),
+	('a_c_fishrockbass_01_sm', 'Lubina de roca pequeña', 5, 1, 'item_standard', 0),
+	('a_c_fishsalmonsockeye_01_ms', 'Salmón rojo', 3, 1, 'item_standard', 0),
+	('a_c_fishsmallmouthbass_01_ms', 'Lubina de boca pequeña', 3, 1, 'item_standard', 0),
+	('blackberry', 'Mirtilo', -1, 1, 'item_standard', 0),
+	('currant', 'Groselha', -1, 1, 'item_standard', 0),
+	('dynamite', 'Pipe charge dynamite', 30, 1, 'item_standard', 1),
+	('fishbait', 'Isca', 10, 1, 'item_standard', 1),
+	('goldbar', 'GoldBar', 30, 1, 'item_standard', 1),
+	('levedurah', 'Levedura Hidratada', 50, 1, 'item_standard', 1),
+	('mp001_p_mp_still02x', 'Destilador', 1, 1, 'item_standard', 0),
+	('nitroglyserolia', 'Nitroglycerol', 30, 1, 'item_standard', 1),
+	('pear', 'Pera', -1, 1, 'item_standard', 1),
+	('piimaa', 'Latent Land', 30, 1, 'item_standard', 1),
+	('p_barrelmoonshine', 'Barril', 1, 1, 'item_standard', 0),
+	('rajahdysoljy', 'Explosive Oil', 30, 1, 'item_standard', 1),
+	('soborno', 'Álcool', -1, 1, 'item_standard', 0),
+	('tropicalPunchMash', 'Misturas de ponche tropical', -1, 1, 'item_standard', 0),
+	('tropicalPunchMoonshine', 'Tropical Punch Moonshine', -1, 1, 'item_standard', 0),
+	('vanillaFlower', 'Flor de baunilha', -1, 1, 'item_standard', 0),
+	('water', 'Água', -1, 1, 'item_standard', 1),
+	('wildCiderMash', 'Purê de cidra selvagem', -1, 1, 'item_standard', 0),
+	('wildCiderMoonshine', 'Wild Cider Moonshine', -1, 1, 'item_standard', 0),
+	('wood', 'Madeira', 50, 1, 'item_standard', 0),
+	('wooden_boards', 'Pranchas de Madeira', 25, 1, 'item_standard', 0);
+/*!40000 ALTER TABLE `items` ENABLE KEYS */;
+
+-- Dumping structure for table vorp.loadout
+DROP TABLE IF EXISTS `loadout`;
+CREATE TABLE IF NOT EXISTS `loadout` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `identifier` varchar(50) NOT NULL,
+  `charidentifier` int(11) DEFAULT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  `ammo` varchar(255) NOT NULL DEFAULT '{}',
+  `components` varchar(255) NOT NULL DEFAULT '[]',
+  `dirtlevel` double DEFAULT 0,
+  `mudlevel` double DEFAULT 0,
+  `conditionlevel` double DEFAULT 0,
+  `rustlevel` double DEFAULT 0,
+  `used` tinyint(4) DEFAULT 0,
+  PRIMARY KEY (`id`),
+  KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4;
+
+-- Dumping data for table vorp.loadout: ~43 rows (approximately)
+/*!40000 ALTER TABLE `loadout` DISABLE KEYS */;
+INSERT INTO `loadout` (`id`, `identifier`, `charidentifier`, `name`, `ammo`, `components`, `dirtlevel`, `mudlevel`, `conditionlevel`, `rustlevel`, `used`) VALUES
+	(2, '', 1, 'WEAPON_REVOLVER_LEMAT', '{"AMMO_REVOLVER":31}', '[]', 0, 0, 0, 0, 0),
+	(3, '', 1, 'WEAPON_MELEE_HATCHET', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(4, '', 1, 'WEAPON_MELEE_HATCHET', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(5, '', 1, 'WEAPON_PISTOL_VOLCANIC', '{"nothing":0,"AMMO_PISTOL":20}', '["nothing"]', 0, 0, 0, 0, 0),
+	(6, '', 1, 'WEAPON_BOW_IMPROVED', '{"nothing":0,"AMMO_ARROW":40}', '["nothing"]', 0, 0, 0, 0, 0),
+	(7, '', 2, 'WEAPON_REVOLVER_LEMAT', '{"AMMO_REVOLVER":173}', '[]', 0, 0, 0, 0, 0),
+	(8, 'steam:110000110ceb4ee', 3, 'WEAPON_REVOLVER_LEMAT', '{"AMMO_REVOLVER":100}', '[]', 0, 0, 0, 0, 0),
+	(9, 'steam:110000110ceb4ee', 3, 'WEAPON_MELEE_TORCH', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(10, 'steam:110000110ceb4ee', 3, 'WEAPON_PISTOL_MAUSER', '{"nothing":0,"AMMO_PISTOL":3,"AMMO_PISTOL_EXPRESS":100}', '["nothing"]', 0, 0, 0, 0, 0),
+	(11, 'steam:110000110ceb4ee', 3, 'WEAPON_SNIPERRIFLE_CARCANO', '{"nothing":0,"AMMO_RIFLE":97}', '["nothing"]', 0, 0, 0, 0, 0),
+	(12, 'steam:110000110ceb4ee', 3, 'WEAPON_SHOTGUN_REPEATING', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(13, 'steam:110000110ceb4ee', 3, 'WEAPON_SHOTGUN_REPEATING', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(14, 'steam:110000110ceb4ee', 3, 'WEAPON_SHOTGUN_REPEATING', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(15, 'steam:110000110ceb4ee', 3, 'WEAPON_SHOTGUN_REPEATING', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(16, 'steam:110000110ceb4ee', 3, 'WEAPON_SHOTGUN_PUMP', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(17, 'steam:110000110ceb4ee', 3, 'WEAPON_RIFLE_VARMINT', '{"nothing":0,"AMMO_22":6}', '["nothing"]', 0, 0, 0, 0, 0),
+	(18, '', 2, 'WEAPON_MELEE_HATCHET', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(19, '', 2, 'WEAPON_MELEE_HATCHET_HUNTER', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(20, '', 2, 'WEAPON_MELEE_HATCHET_VIKING', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(21, '', 2, 'weapon_thrown_bolas', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(22, '', 2, 'WEAPON_BOW_IMPROVED', '{"nothing":0,"AMMO_ARROW_DYNAMITE":8,"AMMO_ARROW_FIRE":8,"AMMO_ARROW_IMPROVED":40,"AMMO_ARROW_POISON":8,"AMMO_ARROW_SMALL_GAME":40,"AMMO_ARROW":40}', '["nothing"]', 0, 0, 0, 0, 0),
+	(23, '', 1, 'WEAPON_MELEE_HATCHET', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(24, '', 2, 'WEAPON_SNIPERRIFLE_CARCANO', '{"nothing":0,"AMMO_RIFLE":73}', '["nothing"]', 0, 0, 0, 0, 0),
+	(25, '', 2, 'WEAPON_RIFLE_SPRINGFIELD', '{"nothing":0,"AMMO_RIFLE":73}', '["nothing"]', 0, 0, 0, 0, 0),
+	(26, '', 2, 'WEAPON_KIT_CAMERA', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(27, '', 1, 'WEAPON_MELEE_CLEAVER', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(28, '', 1, 'WEAPON_MELEE_HATCHET_DOUBLE_BIT', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(29, '', 1, 'WEAPON_MELEE_HATCHET_HEWING', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(30, '', 1, 'WEAPON_MELEE_HATCHET_HUNTER', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(31, '', 1, 'WEAPON_MELEE_HATCHET_VIKING', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(32, '', 1, 'WEAPON_THROWN_TOMAHAWK', '{"nothing":0,"AMMO_TOMAHAWK":1}', '["nothing"]', 0, 0, 0, 0, 0),
+	(33, '', 2, 'WEAPON_THROWN_TOMAHAWK', '{"nothing":0,"AMMO_TOMAHAWK":3,"AMMO_TOMAHAWK_IMPROVED":3,"AMMO_TOMAHAWK_HOMING":3}', '["nothing"]', 0, 0, 0, 0, 0),
+	(34, '', 2, 'WEAPON_THROWN_TOMAHAWK', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(35, '', 2, 'WEAPON_THROWN_TOMAHAWK', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(36, '', 2, 'WEAPON_THROWN_TOMAHAWK', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(37, 'steam:110000132eb5284', 4, 'WEAPON_REVOLVER_LEMAT', '{"AMMO_REVOLVER":100}', '[]', 0, 0, 0, 0, 0),
+	(38, '', 2, 'WEAPON_THROWN_TOMAHAWK', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(39, '', 2, 'WEAPON_THROWN_TOMAHAWK', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(40, '', 2, 'WEAPON_THROWN_TOMAHAWK', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(41, '', 2, 'WEAPON_THROWN_TOMAHAWK', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(42, '', 2, 'WEAPON_THROWN_TOMAHAWK', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(43, 'steam:110000132eb5284', 4, 'WEAPON_REVOLVER_DOUBLEACTION', '{"nothing":0,"AMMO_REVOLVER":140,"AMMO_REVOLVER_EXPRESS":200,"AMMO_REVOLVER_HIGH_VELOCITY":200}', '["nothing"]', 0, 0, 0, 0, 1),
+	(44, 'steam:110000132eb5284', 4, 'WEAPON_LASSO_REINFORCED', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 1),
+	(45, 'steam:110000110ceb4ee', 5, 'WEAPON_REVOLVER_LEMAT', '{"AMMO_REVOLVER":100}', '[]', 0, 0, 0, 0, 0),
+	(46, 'steam:11000010edd51dd', 1, 'WEAPON_MELEE_TORCH', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(47, 'steam:11000010edd51dd', 1, 'WEAPON_MELEE_HATCHET', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 1),
+	(48, 'steam:110000110ceb4ee', 3, 'WEAPON_MELEE_HATCHET', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 1),
+	(49, 'steam:110000110ceb4ee', 3, 'WEAPON_MELEE_HATCHET', '{"nothing":0}', '["nothing"]', 0, 0, 0, 0, 0),
+	(50, 'steam:110000110ceb4ee', 3, 'WEAPON_REPEATER_CARBINE', '{"nothing":0,"AMMO_REPEATER_HIGH_VELOCITY":200,"AMMO_REPEATER_EXPRESS_EXPLOSIVE":10,"AMMO_REPEATER_EXPRESS":200,"AMMO_REPEATER":185}', '["nothing"]', 0, 0, 0, 0, 1);
+/*!40000 ALTER TABLE `loadout` ENABLE KEYS */;
+
+-- Dumping structure for table vorp.outfits
+DROP TABLE IF EXISTS `outfits`;
+CREATE TABLE IF NOT EXISTS `outfits` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `identifier` varchar(45) NOT NULL,
+  `charidentifier` int(11) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `comps` longtext DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC;
+
+-- Dumping data for table vorp.outfits: ~0 rows (approximately)
+/*!40000 ALTER TABLE `outfits` DISABLE KEYS */;
+/*!40000 ALTER TABLE `outfits` ENABLE KEYS */;
+
+-- Dumping structure for table vorp.rooms
+DROP TABLE IF EXISTS `rooms`;
+CREATE TABLE IF NOT EXISTS `rooms` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `interiorId` int(11) NOT NULL,
+  `inventory` longtext DEFAULT NULL,
+  `identifier` varchar(60) NOT NULL,
+  `charidentifier` int(11) NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+
+-- Dumping data for table vorp.rooms: ~0 rows (approximately)
+/*!40000 ALTER TABLE `rooms` DISABLE KEYS */;
+/*!40000 ALTER TABLE `rooms` ENABLE KEYS */;
+
+-- Dumping structure for table vorp.stables
+DROP TABLE IF EXISTS `stables`;
+CREATE TABLE IF NOT EXISTS `stables` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `identifier` varchar(50) NOT NULL,
+  `charidentifier` int(11) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `modelname` varchar(70) NOT NULL,
+  `type` varchar(11) NOT NULL,
+  `status` longtext DEFAULT NULL,
+  `xp` int(11) DEFAULT 0,
+  `injured` int(11) DEFAULT 0,
+  `gear` longtext DEFAULT NULL,
+  `isDefault` int(11) NOT NULL DEFAULT 0,
+  `inventory` longtext DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC;
+
+-- Dumping data for table vorp.stables: ~4 rows (approximately)
+/*!40000 ALTER TABLE `stables` DISABLE KEYS */;
+INSERT INTO `stables` (`id`, `identifier`, `charidentifier`, `name`, `modelname`, `type`, `status`, `xp`, `injured`, `gear`, `isDefault`, `inventory`) VALUES
+	(1, 'steam:11000010edd51dd', 1, 'testio', 'A_C_Horse_Arabian_White', 'horse', NULL, 0, 0, '{\r\n  "blanket": 310248466,\r\n  "horn": 0,\r\n  "bag": 2920349719,\r\n  "tail": 0,\r\n  "mane": 1390155208,\r\n  "saddle": 568909306,\r\n  "stirrups": 3186728837,\r\n  "bedroll": 1174316760,\r\n  "lantern": 0,\r\n  "mask": 0\r\n}', 1, '[   {     "canRemove": true,     "count": 1,     "label": "Barril",     "limit": 1,     "name": "p_barrelmoonshine",     "type": "item_standard",     "usable": false   },   {     "canRemove": true,     "count": 2,     "label": "Destilador",     "limit": 1,     "name": "mp001_p_mp_still02x",     "type": "item_standard",     "usable": true   } ]'),
+	(2, 'steam:110000132eb5284', 4, 'weed', 'A_C_Horse_Shire_LightGrey', 'horse', NULL, 0, 0, NULL, 1, NULL),
+	(3, 'steam:110000110ceb4ee', 3, 'asdasd', 'A_C_Horse_AmericanPaint_Greyovero', 'horse', NULL, 0, 0, NULL, 1, NULL),
+	(5, 'steam:11000013c25cbef', 2, 'Quaralho', 'A_C_Horse_AmericanStandardbred_Black', 'horse', NULL, 0, 0, '{\r\n  "blanket": 3231179052,\r\n  "horn": 276665752,\r\n  "bag": 3826290009,\r\n  "tail": 0,\r\n  "mane": 1824076046,\r\n  "saddle": 275341736,\r\n  "stirrups": 0,\r\n  "bedroll": 659832507,\r\n  "lantern": 1667119228,\r\n  "mask": 3372743849\r\n}', 0, NULL),
+	(6, 'steam:110000110ceb4ee', 3, '123', 'ArmySupplyWagon', 'cart', NULL, 0, 0, NULL, 1, NULL),
+	(7, 'steam:11000010edd51dd', 1, 'vbfs', 'stagecoach004x', 'cart', NULL, 0, 0, NULL, 1, NULL);
+/*!40000 ALTER TABLE `stables` ENABLE KEYS */;
+
+-- Dumping structure for table vorp.transactions
+DROP TABLE IF EXISTS `transactions`;
+CREATE TABLE IF NOT EXISTS `transactions` (
+  `bank` varchar(50) DEFAULT NULL,
+  `fromIdentifier` varchar(50) DEFAULT NULL,
+  `fromcharid` int(11) DEFAULT NULL,
+  `toIdentifier` varchar(50) DEFAULT NULL,
+  `tocharid` int(11) DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  `money` double(22,2) DEFAULT 0.00,
+  `gold` double(22,2) DEFAULT 0.00,
+  `reason` varchar(100) DEFAULT NULL,
+  `bankto` varchar(50) DEFAULT NULL,
+  KEY `FK_transactions_banks` (`bank`),
+  KEY `FK_transactions_banks_2` (`bankto`),
+  CONSTRAINT `FK_transactions_banks` FOREIGN KEY (`bank`) REFERENCES `banks` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `FK_transactions_banks_2` FOREIGN KEY (`bankto`) REFERENCES `banks` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Dumping data for table vorp.transactions: ~0 rows (approximately)
+/*!40000 ALTER TABLE `transactions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `transactions` ENABLE KEYS */;
+
+-- Dumping structure for table vorp.users
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
+  `identifier` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
+  `group` varchar(50) DEFAULT 'user',
+  `warnings` int(11) DEFAULT 0,
+  `banned` tinyint(4) DEFAULT 0,
+  PRIMARY KEY (`identifier`),
+  UNIQUE KEY `identifier` (`identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Dumping data for table vorp.users: ~4 rows (approximately)
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` (`identifier`, `group`, `warnings`, `banned`) VALUES
+	('steam:11000010edd51dd', 'user', 0, 0),
+	('steam:110000110ceb4ee', 'user', 0, 0),
+	('steam:110000132eb5284', 'user', 0, 0),
+	('steam:110000133cc057f', 'user', 0, 0),
+	('steam:11000013c25cbef', 'user', 0, 0);
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+
+-- Dumping structure for table vorp.whitelist
+DROP TABLE IF EXISTS `whitelist`;
+CREATE TABLE IF NOT EXISTS `whitelist` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `identifier` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE,
+  UNIQUE KEY `identifier` (`identifier`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC;
+
+-- Dumping data for table vorp.whitelist: ~0 rows (approximately)
+/*!40000 ALTER TABLE `whitelist` DISABLE KEYS */;
+/*!40000 ALTER TABLE `whitelist` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;

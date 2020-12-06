@@ -1,0 +1,15 @@
+{
+    "IsConnected": "🚫 Duplicated account connected (steam | rockstar)",
+    "NoSteam": "🚫 You have to have Steam open, please open Steam & restart RedM",
+    "NoInWhitelist": "🚫 You are not in the Whitelist",
+    "NoPermissions": "You don't have enough permissions",
+    "CheckingIdentifier": "Checking Identifiers",
+    "LoadingUser": "Loading User",
+    "BannedUser": "You Are Banned",
+    "TitleOnDead": "You have died!",
+    "SubTitleOnDead": "You will respawn in {0} seconds",
+    "SubTitlePressKey": "Press ~e~E~q~ to respawn",
+    "YouAreCarried": "You are being carried by a person",
+
+    "VoiceRangeChanged": "Voice chat range changed to {0} meters"
+}

@@ -1,0 +1,11 @@
+﻿{
+  "PressToStart": "[~e~X~q~] Para fazer entregas",
+  "PressToStop": "[~e~X~q~] Para terminar",
+  "VehicleBlip": "Carroça",
+  "ReturnToOffice": "Regressa ao posto para terminar o trabalho.",
+  "DriveTo": "Faz as entregas por Valentine",
+  "DeliverIn": "Entregar Caixa {0}",
+  "KeyTo": "[ENTER]",
+  "PickPackage": "Caixa",
+  "YouReceive": "Recebes-te {0}$"
+}

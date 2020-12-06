@@ -1,0 +1,11 @@
+﻿{
+  "MainMenuTitle": "Personagem",
+  "MainMenuSubTitle": "Animações, Caminhar, Emotes",
+  "WalkStyleMenuTitle": "Caminhar",
+  "WalkStyleMenuSubTitle": "Formas de Andar",
+  "AnimationsMenuTitle": "Animações",
+  "AnimationsMenuSubTitle": "Animações do Personagem",
+  "EmotesMenuTitle": "Emotes",
+  "EmotesMenuSubTitle": "Emotes do Personagem",
+  "StopAnim": "Parar Animação"
+}
